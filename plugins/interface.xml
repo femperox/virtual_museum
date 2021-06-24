@@ -1,0 +1,1028 @@
+<krpano>
+
+<!-- ============ Разнообразые экшны для работы с визуальной частью ============ -->
+
+
+
+<!--   showlog();============ Инициализация тура ============ -->
+<action name="init_tour"> 
+  
+  <!-- ============ Справка ============ -->
+  create_exp_info_div(div_item_howto, html_item_howto);
+
+  <!-- ============ Тексты ============ -->
+  create_expos_info_div(div_WW2, html_WW2,textset); 
+  create_expos_info_div(div_chronicle1, html_chronicle1,textset); 
+  create_expos_info_div(div_chronicle2, html_chronicle2,textset); 
+  create_expos_info_div(div_partners, html_partners,textset); 
+  create_expos_info_div(div_partners2, html_partners2,textset);
+  create_expos_info_div(div_museum, html_museum,textset); 
+  create_expos_info_div(div_stand, html_stand,textset); 
+  
+  <!-- ============ Айтемы ============ -->
+  create_exp_info_div(div_item_80_years, html_item_80_years); 
+  create_exp_info_div(div_item_old_lady, html_item_old_lady);
+  create_exp_info_div(div_item_soldier_two, html_item_soldier_two);
+  create_exp_info_div(div_item_soldier_woman, html_item_soldier_woman);
+  create_exp_info_div(div_item_soldier_man, html_item_soldier_man);
+  create_exp_info_div(div_item_costume_set1, html_item_costume_set1);
+  create_exp_info_div(div_item_costume_set2, html_item_costume_set2);
+  create_exp_info_div(div_item_photo, html_item_photo);
+  create_exp_info_div(div_item_veteran, html_item_veteran);
+  create_exp_info_div(div_item_rubel_wedPol, html_item_rubel_wedPol);
+  create_exp_info_div(div_item_vine, html_item_vine);
+  create_exp_info_div(div_item_basket, html_item_basket);
+  create_exp_info_div(div_item_samovar, html_item_samovar);
+  create_exp_info_div(div_item_pryalka, html_item_pryalka);
+  create_exp_info_div(div_item_stupka, html_item_stupka);
+  create_exp_info_div(div_item_soldier_prize, html_item_soldier_prize);
+  create_exp_info_div(div_item_soldier_bust, html_item_soldier_bust);
+  create_exp_info_div(div_item_costume_sochi_2014, html_item_costume_sochi_2014);
+  create_exp_info_div(div_item_time_capsule, html_item_time_capsule);
+  create_exp_info_div(div_item_promfect, html_item_promfect);
+ 
+  
+  <!-- ============ Картины ============ -->
+  create_exp_info_div(div_paint_Yakubin, html_paint_Yakubin);
+  create_exp_info_div(div_paint_khytoryanskii, html_paint_khytoryanskii);
+  create_exp_info_div(div_paint_nikandr, html_paint_nikandr);
+  create_exp_info_div(div_paint_koshelkov, html_paint_koshelkov);
+  create_exp_info_div(div_paint_koshelkov_girl1, html_paint_koshelkov_girl1);
+  create_exp_info_div(div_paint_koshelkov_girl2, html_paint_koshelkov_girl2);
+  create_exp_info_div(div_paint_koshelkov_lady, html_paint_koshelkov_lady);
+  create_exp_info_div(div_paint_old_lady, html_paint_old_lady);
+  create_exp_info_div(div_paint_scene, html_paint_scene);
+  create_exp_info_div(div_paint_christ, html_paint_christ);
+  create_exp_info_div(div_paint_kravchenko, html_paint_kravchenko);
+  
+  <!-- ============ ФПМ ============ -->
+  create_expos_info_div(div_fpm, html_fpm, exposset); 
+  create_expos_info_div(div_mat, html_mat, exposset); 
+  
+  create_exp_info_div(div_fpm_Dubinin, html_fpm_Dubinin);
+  create_exp_info_div(div_fpm_slimnote, html_fpm_slimnote);
+  create_exp_info_div(div_fpm_log, html_fpm_log);
+  create_exp_info_div(div_fpm_machine, html_fpm_machine);
+  create_exp_info_div(div_fpm_books, html_fpm_books);
+  create_exp_info_div(div_fpm_trophey_Cache_2004, html_fpm_trophey_Cache_2004);
+  create_exp_info_div(div_fpm_emblem, html_fpm_emblem);
+  create_exp_info_div(div_fpm_medal, html_fpm_medal);
+  create_exp_info_div(div_fpm_medal2, html_fpm_medal2);
+  create_exp_info_div(div_fpm_id, html_fpm_id);
+  create_exp_info_div(div_fpm_gramota, html_fpm_gramota);
+  create_exp_info_div(div_fpm_diploma, html_fpm_diploma);
+  create_exp_info_div(div_fpm_trophey_toghether, html_fpm_trophey_toghether);
+  create_exp_info_div(div_fpm_trophey_IV_kurs, html_fpm_trophey_IV_kurs);
+  
+  <!-- ============ Архитекторы+Геологи ============ -->
+  create_expos_info_div(div_arc, html_arc, exposset); 
+  create_expos_info_div(div_geo, html_geo, exposset); 
+  
+  create_exp_info_div(div_geo_rocks1, html_geo_rocks1);
+  create_exp_info_div(div_geo_rocks2, html_geo_rocks2);
+  create_exp_info_div(div_geo_rocks3, html_geo_rocks3);
+  create_exp_info_div(div_geo_rocks4, html_geo_rocks4);
+  create_exp_info_div(div_geo_oil, html_geo_oil);
+  create_exp_info_div(div_geo_diploma, html_geo_diploma);
+  create_exp_info_div(div_arc_wood, html_arc_wood);
+  create_exp_info_div(div_arc_book, html_arc_book);
+  create_exp_info_div(div_arc_books, html_arc_books);
+  create_exp_info_div(div_arc_medals, html_arc_medals);
+  
+  <!-- ============ Физ+Департамент ============ -->
+  create_expos_info_div(div_dep, html_dep, exposset); 
+  create_expos_info_div(div_phis, html_phis, exposset); 
+  
+  create_exp_info_div(div_dep_knife, html_dep_knife);
+  create_exp_info_div(div_dep_kozel, html_dep_kozel);
+  create_exp_info_div(div_dep_egypt, html_dep_egypt);
+  create_exp_info_div(div_dep_mask, html_dep_mask);
+  create_exp_info_div(div_dep_mechet, html_dep_mechet);
+  create_exp_info_div(div_dep_gerb, html_dep_gerb);
+  create_exp_info_div(div_dep_plate, html_dep_plate);
+  create_exp_info_div(div_dep_tea_set, html_dep_tea_set);
+  create_exp_info_div(div_dep_vesi, html_dep_vesi);
+  create_exp_info_div(div_phi_diploma, html_phi_diploma);
+  create_exp_info_div(div_phi_id, html_phi_id);
+  create_exp_info_div(div_phi_trophey, html_phi_trophey);
+  create_exp_info_div(div_phi_trophey2, html_phi_trophey2);
+  create_exp_info_div(div_phi_trophey3, html_phi_trophey3);
+  create_exp_info_div(div_phi_medal, html_phi_medal);
+  create_exp_info_div(div_phi_medals, html_phi_medals);
+  create_exp_info_div(div_phi_medals2, html_phi_medals2);
+  
+  <!-- ============ Филологический ============ -->
+  create_expos_info_div(div_fil, html_fil, exposset); 
+  
+  create_exp_info_div(div_fil_books, html_fil_books);
+  create_exp_info_div(div_fil_books2, html_fil_books2);
+  create_exp_info_div(div_fil_books3, html_fil_books3);
+  create_exp_info_div(div_fil_machine, html_fil_machine);
+  create_exp_info_div(div_fil_poet, html_fil_poet);
+  create_exp_info_div(div_fil_stepanov, html_fil_stepanov);
+  create_exp_info_div(div_fil_medal, html_fil_medal);
+  create_exp_info_div(div_fil_items, html_fil_items);
+  create_exp_info_div(div_fil_id, html_fil_id);
+  create_exp_info_div(div_fil_letopis, html_fil_letopis);
+  
+  <!-- ============ Юрфак ============ -->
+  create_expos_info_div(div_urf, html_urf, exposset); 
+  
+  create_exp_info_div(div_urf_set, html_urf_set);
+  create_exp_info_div(div_urf_set2, html_urf_set2);
+  create_exp_info_div(div_urf_set3, html_urf_set3);
+  create_exp_info_div(div_urf_diploma, html_urf_diploma);
+  create_exp_info_div(div_urf_diploma2, html_urf_diploma2);
+  create_exp_info_div(div_urf_diploma3, html_urf_diploma3);
+  create_exp_info_div(div_urf_diploma4, html_urf_diploma4);
+  create_exp_info_div(div_urf_trophey, html_urf_trophey);
+  create_exp_info_div(div_urf_trophey2, html_urf_trophey2);
+  create_exp_info_div(div_urf_scientist, html_urf_scientist);
+  create_exp_info_div(div_urf_book, html_urf_book);
+
+  <!-- ============ Журфак ============ -->
+  create_expos_info_div(div_jour, html_jour, exposset); 
+  create_expos_info_div(div_fpp, html_fpp, exposset); 
+  
+  create_exp_info_div(div_jour_diploma, html_jour_diploma);
+  create_exp_info_div(div_jour_diploma2, html_jour_diploma2);
+  create_exp_info_div(div_jour_diploma3, html_jour_diploma3);
+  create_exp_info_div(div_jour_apple, html_jour_apple);
+  create_exp_info_div(div_jour_book, html_jour_book);
+  create_exp_info_div(div_jour_books, html_jour_books);
+  create_exp_info_div(div_jour_books2, html_jour_books2);
+  create_exp_info_div(div_jour_trophey, html_jour_trophey);
+  create_exp_info_div(div_jour_trophey2, html_jour_trophey2);
+  create_exp_info_div(div_jour_camera, html_jour_camera);
+  create_exp_info_div(div_jour_camera2, html_jour_camera2);
+  create_exp_info_div(div_jour_pen, html_jour_pen);
+  
+  
+  <!-- ============ Химический ============ -->
+  create_expos_info_div(div_chem, html_chem, exposset); 
+  
+  create_exp_info_div(div_chem_pribor, html_chem_pribor);
+  create_exp_info_div(div_chem_plastina, html_chem_plastina);
+  create_exp_info_div(div_chem_stekla, html_chem_stekla);
+  create_exp_info_div(div_chem_analizator, html_chem_analizator);
+  create_exp_info_div(div_chem_knigi, html_chem_knigi);
+  create_exp_info_div(div_chem_vaza, html_chem_vaza);
+  create_exp_info_div(div_chem_ramka, html_chem_ramka);
+  create_exp_info_div(div_chem_himia, html_chem_himia);
+  create_exp_info_div(div_chem_medali, html_chem_medali);
+  create_exp_info_div(div_chem_diplom_i_medal, html_chem_diplom_i_medal);
+  create_exp_info_div(div_chem_udostoverenie, html_chem_udostoverenie);
+  create_exp_info_div(div_chem_gorn, html_chem_gorn);
+  create_exp_info_div(div_chem_diplomas, html_chem_diplomas);
+  create_exp_info_div(div_chem_shapka, html_chem_shapka);
+  create_exp_info_div(div_chem_diplom, html_chem_diplom);
+  
+  <!-- ============ Филиалы КубГУ ============ -->
+  create_expos_info_div(div_filials, html_filials, exposset); 
+  
+  create_exp_info_div(div_filials_diplom, html_filials_diplom);
+  create_exp_info_div(div_filials_nagradi, html_filials_nagradi);
+  create_exp_info_div(div_filials_nagradi2, html_filials_nagradi2);
+  create_exp_info_div(div_filials_nagrada2, html_filials_nagrada2);
+  create_exp_info_div(div_filials_kubki, html_filials_kubki);
+  create_exp_info_div(div_filials_kubki2, html_filials_kubki2);
+  create_exp_info_div(div_filials_laureat, html_filials_laureat);
+  create_exp_info_div(div_filials_moneta, html_filials_moneta);
+  
+  <!-- ============ Географический ============ -->
+  create_expos_info_div(div_geogr, html_geogr, exposset); 
+  
+  create_exp_info_div(div_geogr_apparat, html_geogr_apparat);
+  create_exp_info_div(div_geogr_globus1, html_geogr_globus1);
+  create_exp_info_div(div_geogr_lineika, html_geogr_lineika);
+  create_exp_info_div(div_geogr_chto, html_geogr_chto);
+  create_exp_info_div(div_geogr_chto1, html_geogr_chto1);
+  create_exp_info_div(div_geogr_cirkul, html_geogr_cirkul);
+  create_exp_info_div(div_geogr_books, html_geogr_books);
+  create_exp_info_div(div_geogr_diplom, html_geogr_diplom);
+  create_exp_info_div(div_geogr_photos, html_geogr_photos);
+  create_exp_info_div(div_geogr_kompas, html_geogr_kompas);
+  create_exp_info_div(div_geogr_izdanie1, html_geogr_izdanie1);
+  create_exp_info_div(div_geogr_kamni1, html_geogr_kamni1);
+  create_exp_info_div(div_geogr_kompas1, html_geogr_kompas1);
+  create_exp_info_div(div_geogr_ruchka, html_geogr_ruchka);
+  create_exp_info_div(div_geogr_nagrada, html_geogr_nagrada);
+  create_exp_info_div(div_geogr_id, html_geogr_id);
+  
+  <!-- ============ Эконом ============ -->
+  create_expos_info_div(div_econom, html_econom, exposset);
+
+  create_exp_info_div(div_econom_teoria, html_econom_teoria);
+  create_exp_info_div(div_econom_traktat, html_econom_traktat);
+  create_exp_info_div(div_econom_kubok, html_econom_kubok);
+  create_exp_info_div(div_econom_kubok2, html_econom_kubok2);
+  create_exp_info_div(div_econom_medali, html_econom_medali);
+  create_exp_info_div(div_econom_medali2, html_econom_medali2);
+  create_exp_info_div(div_econom_foto, html_econom_foto);
+  create_exp_info_div(div_econom_foto2, html_econom_foto2);
+  create_exp_info_div(div_econom_diplom, html_econom_diplom);
+  create_exp_info_div(div_econom_bilet, html_econom_bilet);
+  create_exp_info_div(div_econom_kuboks, html_econom_kuboks);
+  create_exp_info_div(div_econom_planeta, html_econom_planeta);
+  create_exp_info_div(div_econom_kniga, html_econom_kniga);
+  create_exp_info_div(div_econom_jurnal, html_econom_jurnal);
+  
+  <!-- ============ Биологический ============ -->
+  create_expos_info_div(div_bio, html_bio, exposset);
+  
+  create_exp_info_div(div_bio_mikroskop1, html_bio_mikroskop1);
+  create_exp_info_div(div_bio_mikroskop2, html_bio_mikroskop2);
+  create_exp_info_div(div_bio_mikroskop3, html_bio_mikroskop3);
+  create_exp_info_div(div_bio_sumka, html_bio_sumka);
+  create_exp_info_div(div_bio_kniga, html_bio_kniga);
+  create_exp_info_div(div_bio_blagodarnost, html_bio_blagodarnost);
+  create_exp_info_div(div_bio_eksponat, html_bio_eksponat);
+  create_exp_info_div(div_bio_banochki, html_bio_banochki);
+  create_exp_info_div(div_bio_moneti, html_bio_moneti);
+  create_exp_info_div(div_bio_diplom, html_bio_diplom);
+  create_exp_info_div(div_bio_istoria, html_bio_istoria);
+  create_exp_info_div(div_bio_gramota, html_bio_gramota);
+  create_exp_info_div(div_bio_lekarstva, html_bio_lekarstva);
+  create_exp_info_div(div_bio_diploma, html_bio_diploma);
+  create_exp_info_div(div_bio_moneta, html_bio_moneta);
+  
+  <!-- ============ Физтех ============ -->
+  create_expos_info_div(div_phis_teh, html_phis_teh, exposset);
+  
+  create_exp_info_div(div_phis_teh_steklo, html_phis_teh_steklo);
+  create_exp_info_div(div_phis_teh_kniga, html_phis_teh_kniga);
+  create_exp_info_div(div_phis_teh_istoria, html_phis_teh_istoria);
+  create_exp_info_div(div_phis_teh_plastina, html_phis_teh_plastina);
+  create_exp_info_div(div_phis_teh_kamni, html_phis_teh_kamni);
+  create_exp_info_div(div_phis_teh_kniga1, html_phis_teh_kniga1);
+  create_exp_info_div(div_phis_teh_knigi, html_phis_teh_knigi);
+  create_exp_info_div(div_phis_teh_medali, html_phis_teh_medali);
+  create_exp_info_div(div_phis_teh_svidetelstvo, html_phis_teh_svidetelstvo);
+  create_exp_info_div(div_phis_teh_diplom, html_phis_teh_diplom);
+  create_exp_info_div(div_phis_teh_diplom1, html_phis_teh_diplom1);
+  
+   <!-- ============ Фуп ============ -->
+  create_expos_info_div(div_fyp, html_fyp, exposset);
+  
+  create_exp_info_div(div_fyp_nagrada, html_fyp_nagrada);
+  create_exp_info_div(div_fyp_diplom, html_fyp_diplom);
+  create_exp_info_div(div_fyp_jurnali, html_fyp_jurnali);
+  create_exp_info_div(div_fyp_medal, html_fyp_medal);
+  create_exp_info_div(div_fyp_kubok, html_fyp_kubok);
+  create_exp_info_div(div_fyp_kubok1, html_fyp_kubok1);
+  create_exp_info_div(div_fyp_mashinka, html_fyp_mashinka);
+  create_exp_info_div(div_fyp_nabor2, html_fyp_nabor2);
+  create_exp_info_div(div_fyp_gazeta, html_fyp_gazeta);
+  
+  <!-- ============ Ленин ============ -->
+  create_expos_info_div(div_lenin, html_lenin, exposset);
+  
+  create_exp_info_div(div_lenin_diploma2, html_lenin_diploma2);
+  create_exp_info_div(div_lenin_diploma, html_lenin_diploma);
+  create_exp_info_div(div_lenin_list, html_lenin_list);
+  create_exp_info_div(div_lenin_book, html_lenin_book);
+  create_exp_info_div(div_lenin_books, html_lenin_books);
+  create_exp_info_div(div_lenin_bust, html_lenin_bust);
+  
+  <!-- ============ Худграф ============ -->
+  create_expos_info_div(div_art, html_art, exposset);
+  
+  create_exp_info_div(div_art_jor, html_art_jor);
+  create_exp_info_div(div_art_jor2, html_art_jor2);
+  create_exp_info_div(div_art_art, html_art_art);
+  create_exp_info_div(div_art_item, html_art_item);
+  create_exp_info_div(div_art_vase, html_art_vase);
+  create_exp_info_div(div_art_paint, html_art_paint);
+  
+  <!-- ============ История, социология ============ -->
+  create_expos_info_div(div_his, html_his, exposset);
+  
+  create_exp_info_div(div_his_shapka, html_his_shapka);
+  create_exp_info_div(div_his_nagradi, html_his_nagradi);
+  create_exp_info_div(div_his_istoria, html_his_istoria);
+  create_exp_info_div(div_his_kubok, html_his_kubok);
+  create_exp_info_div(div_his_kniga, html_his_kniga);
+  create_exp_info_div(div_his_pismo, html_his_pismo);
+  create_exp_info_div(div_his_medal, html_his_medal);
+  create_exp_info_div(div_his_medali, html_his_medali);
+  create_exp_info_div(div_his_diplom, html_his_diplom);
+  
+  <!-- ============ РГФ ============ -->
+  create_expos_info_div(div_rgf, html_rgf, exposset);
+  
+  create_exp_info_div(div_rgf_books, html_rgf_books);
+  create_exp_info_div(div_rgf_letter, html_rgf_letter);
+  create_exp_info_div(div_rgf_photobook, html_rgf_photobook);
+  create_exp_info_div(div_rgf_prize2, html_rgf_prize2);
+  create_exp_info_div(div_rgf_prize3, html_rgf_prize3);
+  create_exp_info_div(div_rgf_plates, html_rgf_plates);
+  create_exp_info_div(div_rgf_items, html_rgf_items);
+  create_exp_info_div(div_rgf_prize, html_rgf_prize);
+  
+  <!-- ============ ЭКСПЕДИЦИЯ «ДАМХУРЦ» ============ -->
+  create_expos_info_div(div_vit1, html_vit1, exposset);
+  
+  create_exp_info_div(div_vit1_disk, html_vit1_disk);
+  create_exp_info_div(div_vit1_kartina, html_vit1_kartina);
+  create_exp_info_div(div_vit1_gazeta, html_vit1_gazeta);
+  create_exp_info_div(div_vit1_kepka, html_vit1_kepka);
+  create_exp_info_div(div_vit1_tkan, html_vit1_kepka);
+  create_exp_info_div(div_vit1_ychastniki, html_vit1_ychastniki);
+  create_exp_info_div(div_vit1_stix, html_vit1_stix);
+
+  <!-- ============ Астрофизика ============ -->
+  create_expos_info_div(div_vit2, html_vit2, exposset);
+  
+  create_exp_info_div(div_vit2_diploma, html_vit2_diploma);
+  create_exp_info_div(div_vit2_medal, html_vit2_medal);
+  create_exp_info_div(div_vit2_telegr, html_vit2_telegr);
+  create_exp_info_div(div_vit2_pins, html_vit2_pins);
+  create_exp_info_div(div_vit2_pen, html_vit2_pen);
+  create_exp_info_div(div_vit2_machine, html_vit2_machine);
+  create_exp_info_div(div_vit2_machine2, html_vit2_machine2);
+  create_exp_info_div(div_vit2_brick, html_vit2_brick);
+  create_exp_info_div(div_vit2_pic2, html_vit2_pic2);
+  create_exp_info_div(div_vit2_pic3, html_vit2_pic2);
+  
+  <!-- ============ Технопарк ============ -->
+  create_expos_info_div(div_vit3, html_vit3, exposset);
+  
+  create_exp_info_div(div_vit3_bottle, html_vit3_bottle);
+  create_exp_info_div(div_vit3_book, html_vit3_book);
+  create_exp_info_div(div_vit3_diploma1, html_vit3_diploma1);
+  create_exp_info_div(div_vit3_diploma2, html_vit3_diploma2);
+  create_exp_info_div(div_vit3_diploma3, html_vit3_diploma3);
+  create_exp_info_div(div_vit3_diploma4, html_vit3_diploma4);
+  create_exp_info_div(div_vit3_diploma5, html_vit3_diploma5);
+  create_exp_info_div(div_vit3_prize, html_vit3_prize);
+  create_exp_info_div(div_vit3_medals, html_vit3_medals);
+  create_exp_info_div(div_vit3_plate, html_vit3_plate);
+  create_exp_info_div(div_vit3_chemic, html_vit3_chemic);
+
+  <!-- ============ Древность ============ -->
+  create_expos_info_div(div_ancient, html_ancient, exposset);
+  
+  create_exp_info_div(div_ancient_diplom1, html_ancient_diplom1);
+  create_exp_info_div(div_ancient_diplom2, html_ancient_diplom2);
+  create_exp_info_div(div_ancient_medal, html_ancient_medal);
+  create_exp_info_div(div_ancient_kuvshin, html_ancient_kuvshin);
+  create_exp_info_div(div_ancient_mechi, html_ancient_mechi);
+  create_exp_info_div(div_ancient_noj, html_ancient_noj);
+  create_exp_info_div(div_ancient_topor, html_ancient_topor);
+  create_exp_info_div(div_ancient_busi, html_ancient_busi);
+  create_exp_info_div(div_ancient_chainik1, html_ancient_chainik1);
+  create_exp_info_div(div_ancient_chainik2, html_ancient_chainik2);
+  create_exp_info_div(div_ancient_jivopis, html_ancient_jivopis);
+  create_exp_info_div(div_ancient_figuri, html_ancient_figuri);
+  create_exp_info_div(div_ancient_muzika, html_ancient_muzika);
+  create_exp_info_div(div_ancient_figura, html_ancient_figura);
+  
+  <!-- ============ Хутор ============ -->
+  create_expos_info_div(div_item_khytor, html_item_khytor, exposset); 
+  
+  <!-- ============ Можель сейсмология ============ -->
+  create_expos_info_div(div_item_maket, html_item_maket, exposset);
+  
+  create_expos_info_div(div_item_docs2, html_item_docs2, exposset);
+
+  <!-- ============ Стенд с медалями ============ -->
+  create_expos_info_div(div_item_stand, test, exposset);
+  
+  <!-- ============ Стенд с марками ============ -->
+  create_expos_info_div(div_item_marks, html_item_marks, exposset);
+   
+
+  loadscene(%1);
+
+  set(autorotate.enabled,true);
+  loadPicture(%SWFPATH%/sources/howto.png, div_item_howto);
+
+</action>
+<!-- ============================================= -->
+
+
+<!-- ============ Создание лэера с информацией об экспозиции  ============ -->
+<action name="create_expos_info_div">
+
+  addlayer(%1);
+  
+  set(layer[%1].type, container );
+  set(layer[%1].parent, layer[%3] );
+  set(layer[%1].keep, true );
+  set(layer[%1].enabled, false );
+  
+  set(layer[%1].onloaded, add_html_code(get(data[%2].content),10) );
+  
+  set(layer[%1].align, center);
+  set(layer[%1].edge, center);
+  set(layer[%1].width, 900);
+  set(layer[%1].height, 700);
+  
+  set(layer[%1].alpha, 0);
+  set(layer[%1].scale, 1);
+  
+  set(layer[%1].bgborder, 1 0xFFFFFF 0.5);
+  set(layer[%1].bgcolor, 0x555555);
+  set(layer[%1].bgalpha, 0.7);
+  set(layer[%1].bgcapture, true );
+  set(layer[%1].capture, true );
+  set(layer[%1].handcursor, false);
+  
+</action>
+<!-- ============================================= -->
+
+
+<!-- ============ Создание лэера с информацией об экспонате ============ -->
+<action name="create_exp_info_div">
+
+  addlayer(%1);
+  
+  set(layer[%1].type, container );
+  set(layer[%1].parent, layer[intro1] );
+  set(layer[%1].keep, true );
+  set(layer[%1].enabled, false );
+  
+  set(layer[%1].onloaded, add_html_code(get(data[%2].content),10) );
+
+  set(layer[%1].align, center);
+  set(layer[%1].edge, left);
+  set(layer[%1].width, 40% );
+  set(layer[%1].height, 80% );
+  set(layer[%1].x, 100);
+ 
+  
+  set(layer[%1].alpha, 1);
+  set(layer[%1].scale, 1);
+  
+  set(layer[%1].bgborder, 1 0xFFFFFF 0.5);
+  set(layer[%1].bgcolor, 0x555555);
+  set(layer[%1].bgalpha, 0.7);
+  set(layer[%1].bgcapture, true);
+  set(layer[%1].capture, true);
+  set(layer[%1].handcursor, false);
+  
+</action>
+<!-- ============================================= -->
+
+
+
+<!-- ============ Загрузка начала сцены ============ -->
+<action name="start_scene">
+
+  if(%1==1, 
+		set(view.hlookat, 130);
+		set(view.vlookat,0);
+  );
+  
+  if(%1==2,
+		set(view.hlookat, 130);
+		set(view.vlookat,0);
+  );
+  
+</action>
+<!-- ============================================= -->
+
+
+<!-- ============ Загрузка сцены ============ -->
+<action name = "loadsceneM">
+
+   loadscene(%1, null, MERGE, BLEND(1));
+   lookat(%2, 0,90)
+   
+</action>
+<!-- ============================================= -->
+
+
+<!-- ============ Загрузка Изображения ============ -->
+<action name = "loadPicture">
+    
+	set(layer[picture1].url, %1);
+	
+	hideLrs(intro1);
+	showLayer(intro1);
+	showInfo(%2);
+	
+</action>
+<!-- ============================================= -->
+
+
+<!-- ============ Загрузка Экспозиции ============ -->
+<action name = "loadExpos">
+	set(layer[expos].url, %1);
+	
+    findExpos();wait(0.5);
+	showLayer(exposSet);
+	
+</action>
+<!-- ============================================= -->
+
+<!-- ============ Загрузка Текста ============ -->
+<action name = "loadText">
+	showLayer(textset);
+	showInfo(%1);
+	
+</action>
+<!-- ============================================= -->
+
+
+<!-- ============ Поиск хотспотов для экспозиции ============ -->
+<!-- %1 - параметр, пределяющий с какой целью запускаем экшн -->
+<!--          1 - Сделать хотспоты видимыми-->
+<!--		  2 - Достать инфу -->
+
+<action name = "findExpos">
+	
+	hideLrs(expos,2);
+	set(layer[infoExpos].visible, true);
+	if (  layer[expos].url == '%SWFPATH%/sources/photo/room_I/fpm/all.jpg' ,
+				  setVisibility(room1_fpm_down);
+				  hidePerHp(up, down, '%SWFPATH%/sources/photo/room_I/fpm/all_up.jpg');
+				  setExpoInfo(div_fpm),
+
+	      layer[expos].url == '%SWFPATH%/sources/photo/room_I/fpm/all_up.jpg' ,
+				  setVisibility(room1_fpm_up);
+				  hidePerHp(down, up, '%SWFPATH%/sources/photo/room_I/fpm/all.jpg');
+				  setExpoInfo(div_mat),
+	
+	      layer[expos].url == '%SWFPATH%/sources/photo/room_I/kuban_things/kuban_country2.jpg' OR layer[expos].url == '%SWFPATH%/sources/photo/room_I/kuban_things/kuban_country1.jpg' OR layer[expos].url == '%SWFPATH%/sources/photo/room_I/kuban_things/kuban_country3.jpg' OR layer[expos].url == '%SWFPATH%/sources/photo/room_I/kuban_things/kuban_country4.jpg',
+				  set(layer[up].visible, false);
+				  set(layer[down].visible, false);
+				  setVisibility(room1_khytor);
+				  setExpoInfo(div_item_khytor),
+		  
+		  layer[expos].url == '%SWFPATH%/sources/photo/room_II/architect/all_down.jpg' ,
+				  setVisibility(room2_arc_down); 
+				  hidePerHp(up, down, '%SWFPATH%/sources/photo/room_II/architect/all_up.jpg');
+				  setExpoInfo(div_geo),
+		  
+		  layer[expos].url == '%SWFPATH%/sources/photo/room_II/architect/all_up.jpg' ,
+				  setVisibility(room2_arc_up);
+				  hidePerHp(down, up, '%SWFPATH%/sources/photo/room_II/architect/all_down.jpg');
+				  setExpoInfo(div_arc),
+		
+		  layer[expos].url == '%SWFPATH%/sources/photo/room_I/maket.jpg',
+				  set(layer[up].visible, false);
+			      set(layer[down].visible, false);
+				  setExpoInfo(div_item_maket),
+				  
+		  layer[expos].url == '%SWFPATH%/sources/photo/room_I/marks/marks1.jpg',
+				  set(layer[up].visible, false);
+			      set(layer[down].visible, false);
+				  setExpoInfo(div_item_marks),
+	
+		  
+		  layer[expos].url == '%SWFPATH%/sources/photo/room_II/phis_vosp/all_down.jpg' ,
+				  setVisibility(room2_phis_down);
+				  hidePerHp(up, down, '%SWFPATH%/sources/photo/room_II/phis_vosp/all_up.jpg');
+				  setExpoInfo(div_dep),
+		
+		  layer[expos].url == '%SWFPATH%/sources/photo/room_II/phis_vosp/all_up.jpg' ,
+				  setVisibility(room2_phis_up);
+				  hidePerHp(down, up, '%SWFPATH%/sources/photo/room_II/phis_vosp/all_down.jpg');
+				  setExpoInfo(div_phis),
+				  
+		  layer[expos].url == '%SWFPATH%/sources/photo/room_II/filolog/all_down.jpg' ,
+				  setVisibility(room2_fil_down);
+				  hidePerHp(up, down, '%SWFPATH%/sources/photo/room_II/filolog/all_up.jpg');
+				  setExpoInfo(div_fil),
+		
+		  layer[expos].url == '%SWFPATH%/sources/photo/room_II/filolog/all_up.jpg' ,
+				  setVisibility(room2_fil_up);
+				  hidePerHp(down, up, '%SWFPATH%/sources/photo/room_II/filolog/all_down.jpg');
+				  setExpoInfo(div_fil),
+		  
+		  layer[expos].url == '%SWFPATH%/sources/photo/room_II/urfak/all_down.jpg' ,
+				  setVisibility(room2_urf_down);
+				  hidePerHp(up, down, '%SWFPATH%/sources/photo/room_II/urfak/all_up.jpg');
+				  setExpoInfo(div_urf),
+		
+		  layer[expos].url == '%SWFPATH%/sources/photo/room_II/urfak/all_up.jpg' ,
+				  setVisibility(room2_urf_up);
+				  hidePerHp(down, up, '%SWFPATH%/sources/photo/room_II/urfak/all_down.jpg');  
+				  setExpoInfo(div_urf),
+				  
+		   layer[expos].url == '%SWFPATH%/sources/photo/room_II/journal/all_down.jpg' ,
+				  setVisibility(room2_jour_down);  
+				  hidePerHp(up, down, '%SWFPATH%/sources/photo/room_II/journal/all_up.jpg');
+				  setExpoInfo(div_fpp),
+		
+		  layer[expos].url == '%SWFPATH%/sources/photo/room_II/journal/all_up.jpg' ,
+				  setVisibility(room2_jour_up);
+				  hidePerHp(down, up, '%SWFPATH%/sources/photo/room_II/journal/all_down.jpg');
+				  setExpoInfo(div_jour),
+				  
+		  layer[expos].url == '%SWFPATH%/sources/photo/room_I/chem/all_up.jpg' ,
+				  setVisibility(room1_chem_up);
+				  hidePerHp(down, up, '%SWFPATH%/sources/photo/room_I/chem/all_down.jpg');
+				  setExpoInfo(div_chem),
+		 
+		  layer[expos].url == '%SWFPATH%/sources/photo/room_I/chem/all_down.jpg' ,
+				  setVisibility(room1_chem_down);
+				  hidePerHp(up, down, '%SWFPATH%/sources/photo/room_I/chem/all_up.jpg');
+				  setExpoInfo(div_chem),
+				  
+		  layer[expos].url == '%SWFPATH%/sources/photo/room_I/filials/all_up.jpg' ,
+				  setVisibility(room1_filials_up);
+				  hidePerHp(down, up, '%SWFPATH%/sources/photo/room_I/filials/all_down.jpg');
+				  setExpoInfo(div_filials),
+		 
+		  layer[expos].url == '%SWFPATH%/sources/photo/room_I/filials/all_down.jpg' ,
+				  setVisibility(room1_filials_down);
+				  hidePerHp(up, down, '%SWFPATH%/sources/photo/room_I/filials/all_up.jpg');
+				  setExpoInfo(div_filials),	
+		  
+		  layer[expos].url == '%SWFPATH%/sources/photo/room_I/geogr/all_up.jpg' ,
+				  setVisibility(room1_geogr_up);
+				  hidePerHp(down, up, '%SWFPATH%/sources/photo/room_I/geogr/all_down.jpg');
+				  setExpoInfo(div_geogr),
+		 
+		  layer[expos].url == '%SWFPATH%/sources/photo/room_I/geogr/all_down.jpg' ,
+				  setVisibility(room1_geogr_down);
+				  hidePerHp(up, down, '%SWFPATH%/sources/photo/room_I/geogr/all_up.jpg');
+				  setExpoInfo(div_geogr),		
+		  
+		  layer[expos].url == '%SWFPATH%/sources/photo/room_I/econom/all_up.jpg' ,
+				  setVisibility(room1_econom_up);
+				  hidePerHp(down, up, '%SWFPATH%/sources/photo/room_I/econom/all_down.jpg');
+				  setExpoInfo(div_econom),
+		 
+		  layer[expos].url == '%SWFPATH%/sources/photo/room_I/econom/all_down.jpg' ,
+				  setVisibility(room1_econom_down);
+				  hidePerHp(up, down, '%SWFPATH%/sources/photo/room_I/econom/all_up.jpg');
+				  setExpoInfo(div_econom),	
+		  
+		  layer[expos].url == '%SWFPATH%/sources/photo/room_I/bio/all_up.jpg' ,
+				  setVisibility(room1_bio_up);
+				  hidePerHp(down, up, '%SWFPATH%/sources/photo/room_I/bio/all_down.jpg');
+				  setExpoInfo(div_bio),
+		 
+		  layer[expos].url == '%SWFPATH%/sources/photo/room_I/bio/all_down.jpg' ,
+				  setVisibility(room1_bio_down);
+				  hidePerHp(up, down, '%SWFPATH%/sources/photo/room_I/bio/all_up.jpg');
+				  setExpoInfo(div_bio),
+		 
+          layer[expos].url == '%SWFPATH%/sources/photo/room_I/phis_teh/all_up.jpg' ,
+				  setVisibility(room1_phis_teh_up);
+				  hidePerHp(down, up, '%SWFPATH%/sources/photo/room_I/phis_teh/all_down.jpg');
+				  setExpoInfo(div_phis_teh),
+		 
+		  layer[expos].url == '%SWFPATH%/sources/photo/room_I/phis_teh/all_down.jpg' ,
+				  setVisibility(room1_phis_teh_down);
+				  hidePerHp(up, down, '%SWFPATH%/sources/photo/room_I/phis_teh/all_up.jpg');
+				  setExpoInfo(div_phis_teh),	
+
+		  layer[expos].url == '%SWFPATH%/sources/photo/room_I/fyp/all_up.jpg' ,
+				  setVisibility(room1_fyp_up);
+				  hidePerHp(down, up, '%SWFPATH%/sources/photo/room_I/fyp/all_down.jpg');
+				  setExpoInfo(div_fyp),
+		 
+		  layer[expos].url == '%SWFPATH%/sources/photo/room_I/fyp/all_down.jpg' ,
+				  setVisibility(room1_fyp_down);
+				  hidePerHp(up, down, '%SWFPATH%/sources/photo/room_I/fyp/all_up.jpg');
+				  setExpoInfo(div_fyp),
+
+		  layer[expos].url == '%SWFPATH%/sources/photo/room_I/his/all_up.jpg' ,
+				  setVisibility(room1_his_up);
+				  hidePerHp(down, up, '%SWFPATH%/sources/photo/room_I/his/all_down.jpg');
+				  setExpoInfo(div_his),
+		 
+		  layer[expos].url == '%SWFPATH%/sources/photo/room_I/his/all_down.jpg' ,
+				  setVisibility(room1_his_down);
+				  hidePerHp(up, down, '%SWFPATH%/sources/photo/room_I/his/all_up.jpg');
+				  setExpoInfo(div_his),
+
+		  layer[expos].url == '%SWFPATH%/sources/photo/room_I/rgf/all_up.jpg' ,
+				  setVisibility(room1_rgf_up);
+				  hidePerHp(down, up, '%SWFPATH%/sources/photo/room_I/rgf/all_down.jpg');
+				  setExpoInfo(div_rgf),
+		 
+		  layer[expos].url == '%SWFPATH%/sources/photo/room_I/rgf/all_down.jpg' ,
+				  setVisibility(room1_rgf_down);
+				  hidePerHp(up, down, '%SWFPATH%/sources/photo/room_I/rgf/all_up.jpg');
+				  setExpoInfo(div_rgf),		
+
+		  layer[expos].url == '%SWFPATH%/sources/photo/room_I/vit2/all_up.jpg' ,
+				  setVisibility(room1_vit2_up);
+				  hidePerHp(down, up, '%SWFPATH%/sources/photo/room_I/vit2/all_down.jpg');
+				  setExpoInfo(div_vit2),
+		 
+		  layer[expos].url == '%SWFPATH%/sources/photo/room_I/vit2/all_down.jpg' ,
+				  setVisibility(room1_vit2_down);
+				  hidePerHp(up, down, '%SWFPATH%/sources/photo/room_I/vit2/all_up.jpg');
+				  setExpoInfo(div_vit2),
+
+				  layer[expos].url == '%SWFPATH%/sources/photo/room_I/vit3/all_up.jpg' ,
+				  setVisibility(room1_vit3_up);
+				  hidePerHp(down, up, '%SWFPATH%/sources/photo/room_I/vit3/all_down.jpg');
+				  setExpoInfo(div_vit3),
+		 
+		  layer[expos].url == '%SWFPATH%/sources/photo/room_I/vit3/all_down.jpg' ,
+				  setVisibility(room1_vit3_down);
+				  hidePerHp(up, down, '%SWFPATH%/sources/photo/room_I/vit3/all_up.jpg');
+				  setExpoInfo(div_vit3),				  
+		  <!-- С тремя -->
+		  layer[expos].url == '%SWFPATH%/sources/photo/room_I/vit1/all_up.jpg' ,
+				  setVisibility(room1_vit1_up);
+				  hidePerHp(down, up, '%SWFPATH%/sources/photo/room_I/vit1/all_middle.jpg');
+				  setExpoInfo(div_vit1),
+		 
+		  layer[expos].url == '%SWFPATH%/sources/photo/room_I/vit1/all_middle.jpg' ,
+				  setVisibility(room1_vit1_mid);
+				  hidePerHp(up, down, '%SWFPATH%/sources/photo/room_I/vit1/all_up.jpg');
+				  set(layer[down].visible, true);
+				  set(layer[down].onclick, changeExpo('%SWFPATH%/sources/photo/room_I/vit1/all_down.jpg'));
+				  setExpoInfo(div_vit1),		
+
+		  layer[expos].url == '%SWFPATH%/sources/photo/room_I/vit1/all_down.jpg' ,
+				  setVisibility(room1_vit1_down);
+				  hidePerHp(up, down, '%SWFPATH%/sources/photo/room_I/vit1/all_middle.jpg');
+				  setExpoInfo(div_vit1),	
+
+		  layer[expos].url == '%SWFPATH%/sources/photo/room_I/ancient/all_up.jpg' ,
+				  setVisibility(room1_ancient_up);
+				  hidePerHp(down, up, '%SWFPATH%/sources/photo/room_I/ancient/all_middle.jpg');
+				  setExpoInfo(div_ancient),
+		 
+		  layer[expos].url == '%SWFPATH%/sources/photo/room_I/ancient/all_middle.jpg' ,
+				  setVisibility(room1_ancient_mid);
+				  hidePerHp(up, down, '%SWFPATH%/sources/photo/room_I/ancient/all_up.jpg');
+				  set(layer[down].visible, true);
+				  set(layer[down].onclick, changeExpo('%SWFPATH%/sources/photo/room_I/ancient/all_down.jpg'));
+				  setExpoInfo(div_ancient),		
+
+		  layer[expos].url == '%SWFPATH%/sources/photo/room_I/ancient/all_down.jpg' ,
+				  setVisibility(room1_ancient_down);
+				  hidePerHp(up, down, '%SWFPATH%/sources/photo/room_I/ancient/all_middle.jpg');
+				  setExpoInfo(div_ancient),	
+		  <!-- С тремя конец -->		  
+		  
+		  layer[expos].url == '%SWFPATH%/sources/photo/room_I/lenin/all.jpg' ,
+				  set(layer[up].visible, false);
+				  set(layer[down].visible, false);
+				  setVisibility(room1_lenin);
+				  setExpoInfo(div_lenin),
+				  
+		  layer[expos].url == '%SWFPATH%/sources/photo/room_I/art/all.jpg' ,
+				  set(layer[up].visible, false);
+				  set(layer[down].visible, false);
+				  setVisibility(room1_art);
+				  setExpoInfo(div_art),
+				  
+	      layer[expos].url == '%SWFPATH%/sources/photo/room_I/history_stand/history_paper2.jpg' OR layer[expos].url == '%SWFPATH%/sources/photo/room_I/history_stand/history_paper3.jpg' OR layer[expos].url == '%SWFPATH%/sources/photo/room_I/history_stand/history_paper1.jpg',
+				  set(layer[up].visible, false);
+				  set(layer[down].visible, false);
+				  setExpoInfo(div_item_docs2),		
+		  
+		  		  
+		  hideAllHp();
+	);
+		  
+</action>
+<!-- ============================================= -->
+
+<!-- ============ Установка параметров видимости хотспотов экспозиции ============ -->
+<action name = "setVisibility">
+	set(layer[%1].alpha,1);
+	set(layer[%1].enabled,true);
+</action>
+<!-- ============================================= -->
+
+<!-- ============ Отображение/Сокрытие инфы об экпозиции ============ -->
+<action name = "setExpoInfo">
+	set(layer[infoExpos].onclick, showInfo(%1,2));
+	set(layer[exit_html_div1].onclick, hideInfo(%1));
+</action>
+<!-- ============================================= -->
+
+<!-- ============ Скрытие хотпостов экпозиции ============ -->
+<action name = "hideAllHp">
+	set(layer[up].visible, false);
+	set(layer[down].visible, false);
+	set(layer[infoExpos].visible, false);
+</action>
+<!-- ============================================= -->
+
+<!-- ============ Скрытие хотпостов перехода экспозиции ============ -->
+<action name = "hidePerHp">
+	set(layer[%1].visible, true);
+	set(layer[%1].onclick, changeExpo(%3));
+	set(layer[%2].visible, false);
+</action>
+<!-- ============================================= -->
+
+<!-- ============ Скрытие хотпостов экспозиции ============ -->
+<action name = "hideLrs">
+    
+    for(set(i,0), i LT layer.count, inc(i),
+			copy(lrs, layer[get(i)]);
+			if(lrs.parent == 'layer[%1]' ,
+			        set(layer[get(i)].alpha,0); 
+					if (%2 == 2, set(layer[get(i)].enabled,false); );
+			   );
+		);
+		 
+</action>
+<!-- ============================================= -->
+
+<!-- ============ Скрытие хотпостов экспозиции ============ -->
+<action name = "hideTexts">
+    hideLayer(%1);
+    for(set(i,0), i LT layer.count, inc(i),
+			copy(lrs, layer[get(i)]);
+			if(lrs.parent == 'layer[%1]' ,
+			
+			        set(layer[get(i)].alpha,0); 
+					set(layer[get(i)].visible, false);
+					set(layer[get(i)].enabled, false);
+			   );
+		);
+	
+		 
+</action>
+<!-- ============================================= -->
+
+
+<!-- ============ отключение инфы экспонате ============ -->
+<action name = "hideInfos"> 
+    
+    for(set(i,0), i LT layer.count, inc(i),
+			copy(lrs, layer[get(i)]);
+			if(lrs.parent == 'layer[intro1]' AND lrs.type == 'container' ,
+			        set(layer[get(i)].enabled,false); 
+					set(layer[get(i)].visible,false); 
+			   );
+		);
+		 
+</action>
+<!-- ============================================= -->
+
+
+<!-- ============ Скрытие слоёв ============ -->
+<action name = "hideLayer">
+
+    tween(layer[%1].alpha,0);
+	tween(layer[%1].scale,0);
+	wait(0.5);
+	if (%2 ==2, hideInfos(););
+
+	set(layer[%1].enabled, false);
+	set(layer[%1].visible, false);	
+
+</action>
+<!-- ============================================= -->
+
+
+<!-- ============ Отображение слоёв ============ -->
+<action name = "showLayer">
+	
+	set(layer[%1].enabled, true);
+	set(layer[%1].visible, true);	
+	
+    tween(layer[%1].alpha,1);
+	tween(layer[%1].scale,1);
+	 
+</action>
+<!-- ============================================= -->
+
+<!-- ============ Отображение инфо-плашки ============ -->
+<action name = "showInfo"> 
+	tween(layer[%1].alpha,1);
+	set(layer[%1].visible, true);
+    set(layer[%1].enabled, true);
+	
+	if (%2 == 2, tween(layer[exit_html_div1].alpha,1););
+</action>
+<!-- ============================================= -->
+
+<!-- ============ Сокрытие инфо-плашки ============ -->
+<action name = "hideInfo"> 
+
+	if( %2 == 2,
+    	 hideLayer(intro1),
+		 
+		 tween(layer[%1].alpha,0);
+		 tween(layer[exit_html_div1].alpha,0);
+	     wait(0.5););
+	
+	
+	set(layer[%1].visible, false);
+	set(layer[%1].enabled, false);
+
+</action>
+<!-- ============================================= -->
+
+<!-- ============ Переход между уровнями экспозиций ============ -->
+<action name = "changeExpo"> 
+	hideLayer(exposSet);
+	wait(0.5);
+	loadExpos(%1);
+</action>
+<!-- ============================================= -->
+
+<!-- ============ Перелистывание Фото ============ -->
+<action name = "changeKhytorPhoto"> 
+	if ( %1 == 'L', changeKhytorPhotoLeft(),
+		 %1 == 'R', changeKhytorPhotoRight();
+	);
+</action>
+<!-- ============================================= -->
+
+<!-- ============ Перелистывание Фото Левое ============ -->
+<action name = "changeKhytorPhotoLeft"> 
+	tween(layer[exposSet].alpha, 0);
+
+	wait(0.5);
+	if (  layer[expos].url == '%SWFPATH%/sources/photo/room_I/kuban_things/kuban_country2.jpg' ,
+				   
+				  set(layer[expos].url,'%SWFPATH%/sources/photo/room_I/kuban_things/kuban_country3.jpg' ),
+
+		  layer[expos].url == '%SWFPATH%/sources/photo/room_I/kuban_things/kuban_country3.jpg' ,
+
+				  set(layer[expos].url,'%SWFPATH%/sources/photo/room_I/kuban_things/kuban_country4.jpg'),
+	
+		  layer[expos].url == '%SWFPATH%/sources/photo/room_I/kuban_things/kuban_country4.jpg' ,
+
+				  set(layer[expos].url,'%SWFPATH%/sources/photo/room_I/kuban_things/kuban_country1.jpg' ),
+	
+		  layer[expos].url == '%SWFPATH%/sources/photo/room_I/kuban_things/kuban_country1.jpg' ,
+
+				  set(layer[expos].url,'%SWFPATH%/sources/photo/room_I/kuban_things/kuban_country2.jpg' );
+
+	);
+	
+	tween(layer[exposSet].alpha, 1);
+</action>
+<!-- ============================================= -->
+
+<!-- ============ Перелистывание Фото Правое ============ -->
+<action name = "changeKhytorPhotoRight"> 
+	tween(layer[exposSet].alpha, 0);
+
+	wait(0.5);
+	if (  layer[expos].url == '%SWFPATH%/sources/photo/room_I/kuban_things/kuban_country2.jpg' ,
+				   
+				  set(layer[expos].url,'%SWFPATH%/sources/photo/room_I/kuban_things/kuban_country1.jpg' ),
+
+		  layer[expos].url == '%SWFPATH%/sources/photo/room_I/kuban_things/kuban_country3.jpg' ,
+
+				  set(layer[expos].url,'%SWFPATH%/sources/photo/room_I/kuban_things/kuban_country2.jpg'),
+	
+		  layer[expos].url == '%SWFPATH%/sources/photo/room_I/kuban_things/kuban_country4.jpg' ,
+
+				  set(layer[expos].url,'%SWFPATH%/sources/photo/room_I/kuban_things/kuban_country3.jpg' ),
+	
+		  layer[expos].url == '%SWFPATH%/sources/photo/room_I/kuban_things/kuban_country1.jpg' ,
+
+				  set(layer[expos].url,'%SWFPATH%/sources/photo/room_I/kuban_things/kuban_country4.jpg' );
+
+	);
+	
+	tween(layer[exposSet].alpha, 1);
+</action>
+<!-- ============================================= -->
+
+<action name = "traceObject"> 
+    trace('============================================');
+	trace('layer[',%1, '].visible = ', layer[%1].visible);
+	trace('layer[',%1, '].enabled = ', layer[%1].enabled);
+	trace('layer[',%1, '].alpha = ', layer[%1].alpha);
+
+	
+</action>
+
+<action name = "traceLrs">
+    trace('----------child of ', %1, '-------------');
+    for(set(i,0), i LT layer.count, inc(i),
+			copy(lrs, layer[get(i)]);
+			if(lrs.parent == 'layer[%1]' ,
+			        trace(lrs.name);
+			   );
+		);
+	trace('----------------------------------------');	 
+</action>
+
+<action name = "traceLrs2">
+    trace('-----------------------------------------');
+    for(set(i,0), i LT layer.count, inc(i),
+			copy(lrs, layer[get(i)]);
+			if(lrs.name == div_fpm ,
+			        trace(lrs.name, lrs.parent);
+			   );
+			   
+		);
+	trace('----------------------------------------');	 
+</action>
+
+<action name = "traceAlphaPerehod">
+    trace('-----------------------------------------');
+    for(set(i,0), i LT layer.count, inc(i),
+			copy(lrs, layer[get(i)]);
+			if(lrs.url == "%SWFPATH%/sources/hotspot_down.png" OR lrs.url == "%SWFPATH%/sources/hotspot_up.png" ,
+			        trace(lrs.name,' - ', lrs.enabled);
+			   );
+			   
+		);
+	trace('----------------------------------------');	 
+</action>
+
+</krpano>

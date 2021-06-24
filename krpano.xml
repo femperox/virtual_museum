@@ -1,0 +1,2072 @@
+﻿<krpano version="1.0.8.14" onstart="init_tour(room1_1);">
+<autorotate enabled="false"/>
+
+<include url="%VIEWER%/plugins/html_with_scrolling.xml" />
+<include url="%VIEWER%/plugins/interface.xml" />
+<include url="%VIEWER%/sources/xmls/layers_hotspots.xml" />
+
+<include url="%VIEWER%/sources/html/info_fpm.xml" />
+<include url="%VIEWER%/sources/html/info_rgf.xml" />
+<include url="%VIEWER%/sources/html/info_his.xml" />
+<include url="%VIEWER%/sources/html/info_fyp.xml" />
+<include url="%VIEWER%/sources/html/info_lenin.xml" />
+<include url="%VIEWER%/sources/html/info_phis_teh.xml" />
+<include url="%VIEWER%/sources/html/info_arc.xml" />
+<include url="%VIEWER%/sources/html/info_art.xml" />
+<include url="%VIEWER%/sources/html/info_fil.xml" />
+<include url="%VIEWER%/sources/html/info_econom.xml" />
+<include url="%VIEWER%/sources/html/info_urf.xml" />
+<include url="%VIEWER%/sources/html/info_geogr.xml" />
+<include url="%VIEWER%/sources/html/info_bio.xml" />
+<include url="%VIEWER%/sources/html/info_jour.xml" />
+<include url="%VIEWER%/sources/html/info_filials.xml" />
+<include url="%VIEWER%/sources/html/info_phis_dep.xml" />
+<include url="%VIEWER%/sources/html/info_chem.xml" />
+<include url="%VIEWER%/sources/html/info_paintings.xml" />
+<include url="%VIEWER%/sources/html/info_text.xml" />
+<include url="%VIEWER%/sources/html/info_items.xml" />
+<include url="%VIEWER%/sources/html/info_vit1.xml" />
+<include url="%VIEWER%/sources/html/info_vit2.xml" />
+<include url="%VIEWER%/sources/html/info_vit3.xml" />
+<include url="%VIEWER%/sources/html/info_ancient.xml" />
+
+<!-- =========================== заметка
+
+	Для дискеы на фпм просто инфу про дискетц в йелом
+	
+	Филологический сделать левый хотспот инфо сверху
+	
+
+ =========================== -->
+ 
+ <!-- =========================== Управление =========================== -->
+<plugin name="openfullscreen"
+    url="%SWFPATH%/sources/buttoncontrol.png"
+    align="bottomright"
+    keep="true"
+    y="10"
+    x="10"
+    visible="true"
+    crop="0|0|30|30"
+    onovercrop="0|30|30|30"
+    onclick="set(fullscreen,true); set(plugin[openfullscreen].visible,false); set(plugin[closefullscreen].visible,true);"
+/>
+
+<plugin name="closefullscreen"
+    url="%SWFPATH%/sources/buttoncontrol.png"
+    align="bottomright"
+    keep="true"
+    y="10"
+    x="10"
+    visible="false"
+    crop="30|0|30|30"
+    onovercrop="30|30|30|30"
+    onclick="set(fullscreen,false); set(plugin[openfullscreen].visible,true); set(plugin[closefullscreen].visible,false);"
+/>
+
+<plugin name="onrotate"
+    url="%SWFPATH%/sources/buttoncontrol.png"
+    align="bottomright"
+    keep="true"
+    y="10"
+    x="50"
+    visible="false"
+    crop="60|0|30|30"
+    onovercrop="60|30|30|30"
+    onclick="set(autorotate.enabled,true); set(plugin[onrotate].visible,false); set(plugin[offrotate].visible,true);"
+/> 
+ 
+<plugin name="offrotate"
+    url="%SWFPATH%/sources/buttoncontrol.png"
+    align="bottomright"
+    keep="true"
+    y="10"
+    x="50"
+    visible="true"
+    crop="90|0|30|30"
+    onovercrop="90|30|30|30"
+    onclick="set(autorotate.enabled,false); set(plugin[onrotate].visible,true); set(plugin[offrotate].visible,false);"
+/>
+  
+<plugin name="howto"
+    url="%SWFPATH%/sources/qestion.png"
+    align="bottomright"
+    keep="true"
+    y="10"
+    x="90"
+    visible="true"
+    crop="0|0|30|30"
+    onovercrop="0|30|30|30"
+    onclick="loadPicture(%SWFPATH%/sources/howto.png, div_item_howto); "
+/>
+  
+
+<!-- ====================================================== -->
+
+
+<!-- =========================== ИЗОБРАЖЕНИЯ =========================== -->
+<layer name="intro1" type = "container"
+    
+	width="1200"
+    height="700"
+	keep = "true"
+	alpha="0"
+    align="center" 
+    edge="center"
+    scale="0" 	
+	bgcolor="0x333333"
+	bgalpha="0.4"
+	zorder = "1"
+	scalechildren = "true"
+	maskchildren = "true"
+	bgcapture ="true"
+	handcursor= "false"
+
+	>
+	
+	
+	<layer name = "picture1"
+		url=""
+		keep="true" 
+		handcursor="false" 
+		align="left" 
+		edge="left" 
+		alpha="1" 
+		scale="1" 
+		parent="layer[intro1]"
+	/>
+	
+	<layer name = "exit"
+		url="%SWFPATH%/sources/hotspot_exit.png"
+		keep="true" 
+		handcursor="false" 
+		crop="0|0|26|26" onovercrop="0|26|26|26"
+		align="righttop" 
+		edge="righttop" 
+		alpha="1" 
+		scale="1" 
+		onclick="hideLayer(intro1, 2);"
+		parent="layer[intro1]"
+	/>
+	
+  
+	
+</layer>
+<!-- ====================================================================== -->
+
+<!-- =========================== ТЕКСТА =========================== -->
+<layer name = "textset" type = "container"
+    width="900"
+    height="700"
+	alpha="0" 
+	scale="0" 
+	align="center" 
+	edge="center" 
+	keep = "true"
+	scalechildren = "true"	
+	>
+	
+	<layer name = "exit_textset"
+		url="%SWFPATH%/sources/hotspot_exit.png"
+		keep="true" 
+		handcursor="false" 
+		crop="0|0|26|26" onovercrop="0|26|26|26"
+		align="righttop" 
+		edge="righttop" 
+		alpha="1" 
+		scale="1" 
+		onclick="hideTexts(textset);"
+		parent="layer[textset]"
+		zorder = "3"
+	/>
+</layer>
+<!-- ====================================================================== -->
+
+
+<!-- =========================== ЭКСПОЗИЦИЯ =========================== -->
+<layer name = "exposSet" type = "container"
+    width="900"
+    height="700"
+	alpha="0" 
+	scale="0" 
+	align="center" 
+	edge="center" 
+	keep = "true"
+	scalechildren = "true"
+	onclick="hideLayer(exposSet);"
+	zorder = "0"
+	
+	>
+
+    <layer name = "expos"
+        url=""
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		alpha="1" 
+		scale="1" 
+		scalechildren = "true"
+		onclick="hideLayer(exposSet);"
+		
+		parent="layer[exposSet]"
+    />
+	
+	<layer name = "infoExpos"
+        url="%SWFPATH%/sources/hotspot_info.png"
+		crop="0|0|100|26" onovercrop="0|26|100|26"
+		
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		alpha="1" 
+		scale="1" 
+		scalechildren = "true"
+		onclick="showInfo(div_fpm);"
+		
+		parent="layer[exposSet]"
+    />
+	
+	
+	<layer name="html_div1" type="container"
+	       align="center" 
+		   width.normal="100%" width.mobile="50%" height.normal="100%" height.mobile="400" 
+		   edge="center"  
+		   alpha="0" 
+		   scale="1" 
+	       bgborder="1 0xFFFFFF 0.5" bgcolor="0x555555" bgalpha="0.7"
+	       bgcapture="true" capture="true" handcursor="false"
+		   enabled = "false"
+	       onloaded="find_info(2);"
+		   onclick="hideInfo(html_div1);"
+		   
+		   parent="layer[exposSet]"
+		 
+
+	/>
+	
+	<layer name = "exit_html_div1"
+		url="%SWFPATH%/sources/hotspot_exit.png"
+		keep="true" 
+		handcursor="false" 
+		crop="0|0|26|26" onovercrop="0|26|26|26"
+		align="righttop" 
+		edge="righttop" 
+		alpha="0" 
+		scale="1" 
+		onclick="hideInfo(html_div1);"
+		parent="layer[html_div1]"
+		zorder = "3"
+	/>
+	
+	<layer name = "up"
+        url="%SWFPATH%/sources/hotspot_up.png"
+		crop="0|0|26|26" onovercrop="0|26|26|26"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="top" 
+	    y = "-350"
+		scale="1" 
+		parent="layer[exposSet]"
+    />
+	
+	<layer name = "down"
+        url="%SWFPATH%/sources/hotspot_down.png"
+		crop="0|0|26|26" onovercrop="0|26|26|26"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="bottom" 
+		y = "351"
+		scale="1" 
+		parent="layer[exposSet]"
+    />
+	
+</layer>
+<!-- ====================================================================== -->
+
+
+
+
+ <scene name="room1_1" onstart="start_scene(1);" >
+   <view hlookat="0" vlookat="0" fovtype="MFOV" fov="90" maxpixelzoom="0.0" fovmin="90" fovmax="90" limitview="lookat" hlookatmin="-360" hlookatmax="360" vlookatmin="0" vlookatmax="0"/>
+   
+   <image>
+     <cube url="%SWFPATH%/sources/Panor/room1/1/room1_1_enter_%s.jpg" />
+   </image>
+   
+   
+   <!-- КОМНАТЫ: -->
+   <hotspot name="spotRoom1_1-2" url="%SWFPATH%/sources/hotspot.png"
+     ath="130" atv="20"
+     crop="0|0|26|26" onovercrop="0|26|26|26"
+     onclick="loadsceneM(room1_2);"
+   />
+   
+   
+   <hotspot name="spotRoom1_1-10" url="%SWFPATH%/sources/hotspot.png"
+     ath="-120" atv="10"
+     crop="0|0|26|26" onovercrop="0|26|26|26"
+     onclick="loadsceneM(room1_10, -290);"
+   />
+   
+   <hotspot name="spotRoom1_1-9" url="%SWFPATH%/sources/hotspot.png"
+     ath="200" atv="10"
+     crop="0|0|26|26" onovercrop="0|26|26|26"
+     onclick="loadsceneM(room1_9, -60);"
+   />
+   
+   
+    <!-- ЭКСПОЗИЦИИ: -->
+    <hotspot name="spotExpo_khytor_Room1_1" url="%SWFPATH%/sources/hotspot_exposition.png"
+			 ath="190" atv="14"
+			 crop="0|0|26|26" onovercrop="0|26|26|26"
+			 onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/kuban_things/kuban_country2.jpg);"
+         
+    />
+	
+	<hotspot name="spotExpo_chem1_Room1_1" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="65" atv="-5"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/chem/all_up.jpg);"
+         
+    />
+	
+	<hotspot name="spotExpo_chem2_Room1_1" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="65" atv="15"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/chem/all_down.jpg);"
+         
+    />
+
+	<hotspot name="spotExpo_geogr1_Room1_1" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="17" atv="-5"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/geogr/all_up.jpg);"
+         
+    />
+	
+	<hotspot name="spotExpo_geogr2_Room1_1" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="17" atv="15"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/geogr/all_down.jpg);"
+         
+    />	
+   	<!-- КАРТИНЫ: -->
+	<hotspot name="spotPicture1_Room1_1" url="%SWFPATH%/sources/hotspot_picture.png"
+          ath="3" atv="6"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadPicture(%SWFPATH%/sources/photo/room_I/paintings/paintings_woman.jpg, div_paint_old_lady); "
+          
+    />
+	 
+	<hotspot name="spotPicture2_Room1_1" url="%SWFPATH%/sources/hotspot_picture.png"
+          ath="-70" atv="5"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadPicture(%SWFPATH%/sources/photo/room_I/paintings/paintings_yakubin.jpg, div_paint_Yakubin); "
+          
+    />
+	
+	 <!-- ПРЕДМЕТЫ: -->
+	<hotspot name="spotItem1_Room1_1" url="%SWFPATH%/sources/hotspot_picture.png"
+          ath="210" atv="20"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadPicture(%SWFPATH%/sources/photo/room_I/kuban_things/kuban_washing2.jpg, div_item_rubel_wedPol); "
+          
+    />
+	
+	<hotspot name="spotItem2_Room1_1" url="%SWFPATH%/sources/hotspot_picture.png"
+          ath="219" atv="20"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadPicture(%SWFPATH%/sources/photo/room_I/kuban_things/kuban_washing.jpg, div_item_vine); "
+          
+    />
+	
+	<hotspot name="spotItem3_Room1_1" url="%SWFPATH%/sources/hotspot_picture.png"
+          ath="200" atv="23"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadPicture(%SWFPATH%/sources/photo/room_I/kuban_things/kuban_vedro.jpg, div_item_basket); "
+          
+    />
+	
+	 <hotspot name="spotItem4_Room1_1" url="%SWFPATH%/sources/hotspot_picture.png"
+          ath="-75" atv="10"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadPicture(%SWFPATH%/sources/photo/room_I/WWII/statue_soldier_woman.jpg, div_item_soldier_woman); "
+          
+     />
+   
+</scene>
+ 
+ 
+ <scene name="room1_2" onstart="start_scene(2);">
+    <view hlookat="0" vlookat="0" fovtype="MFOV" fov="90" maxpixelzoom="0.0" fovmin="90" fovmax="90" limitview="lookat" hlookatmin="-360" hlookatmax="360" vlookatmin="0" vlookatmax="0"/>
+    <image>
+      <cube url="%SWFPATH%/sources/Panor/room1/2/room1_2_%s.jpg" />
+    </image>
+	
+	 <hotspot name="spotRoom1_2-1" url="%SWFPATH%/sources/hotspot.png"
+          ath="-50" atv="10"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+          onclick="loadsceneM(room1_1, 0);"
+      />
+   
+      <hotspot name="spotChangeToRoom2" url="%SWFPATH%/sources/hotspot.png"
+		ath="40" atv="10"
+		crop="0|0|26|26" onovercrop="0|26|26|26"
+		onclick="loadsceneM(room2_1, 170);"
+	  />	
+
+      <hotspot name="spotRoom1_2-3" url="%SWFPATH%/sources/hotspot.png"
+		ath="130" atv="10"
+		crop="0|0|26|26" onovercrop="0|26|26|26"
+		onclick="loadsceneM(room1_3);"
+	  />	 
+
+	  <hotspot name="spotRoom1_2-9" url="%SWFPATH%/sources/hotspot.png"
+		ath="210" atv="10"
+		crop="0|0|26|26" onovercrop="0|26|26|26"
+		onclick="loadsceneM(room1_9);"
+	  />
+
+     <hotspot name="spotRoom1_2-10" url="%SWFPATH%/sources/hotspot.png"
+		ath="-90" atv="10"
+		crop="0|0|26|26" onovercrop="0|26|26|26"
+		onclick="loadsceneM(room1_10, -290);"
+	  />
+	  
+	<!-- ЭКСПОЗИЦИИ: -->
+    <hotspot name="spotExpo_khytor_Room1_2" url="%SWFPATH%/sources/hotspot_exposition.png"
+			 ath="235" atv="20"
+			 crop="0|0|26|26" onovercrop="0|26|26|26"
+			 onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/kuban_things/kuban_country2.jpg);"
+         
+    />
+	
+		
+	<hotspot name="spotExpo_chem1_Room1_2" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="-13" atv="-5"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/chem/all_up.jpg);"
+         
+    />
+	
+	<hotspot name="spotExpo_chem2_Room1_2" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="-13" atv="10"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/chem/all_down.jpg);"
+         
+    />
+	
+	<hotspot name="spotExpo_marks_Room1_2" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="68" atv="20"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/marks/marks1.jpg);"
+         
+    />
+	
+	<hotspot name="spotExpo_vit11_Room1_2" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="168" atv="-15"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/vit1/all_up.jpg);"
+         
+    />
+	
+	<hotspot name="spotExpo_vit12_Room1_2" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="168" atv="0"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/vit1/all_middle.jpg);"
+         
+    />
+	
+		<hotspot name="spotExpo_vit13_Room1_2" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="168" atv="16"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/vit1/all_down.jpg);"
+         
+    />
+	  
+	<!-- ПРЕДМЕТЫ: -->
+	<hotspot name="spotItem1_Room1_2" url="%SWFPATH%/sources/hotspot_picture.png"
+          ath="-3" atv="-7"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadPicture(%SWFPATH%/sources/photo/room_I/photo.jpg, div_item_photo); "
+          
+    />
+	
+	<!-- ТЕКСТЫ: -->
+	<hotspot name="spotText1_Room1_2" url="%SWFPATH%/sources/hotspot_picture.png"
+          ath="68" atv="15"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadText(div_museum);"  
+    />
+	  
+	  
+</scene>  
+
+<scene name="room1_3" onstart="start_scene(3);">
+    <view hlookat="190" vlookat="0" fovtype="MFOV" fov="90" maxpixelzoom="0.0" fovmin="90" fovmax="90"
+		  limitview="lookat" hlookatmin="-360" hlookatmax="360" vlookatmin="0" vlookatmax="0"/>
+    <image>
+      <cube url="%SWFPATH%/sources/Panor/room1/3/room1_3_%s.jpg" />
+    </image>
+	
+	 <hotspot name="spotRoom1_3-2" url="%SWFPATH%/sources/hotspot.png"
+          ath="10" atv="10"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+          onclick="loadsceneM(room1_2, -50);"
+     />
+	 
+	 
+	 <hotspot name="spotRoom1_3-4" url="%SWFPATH%/sources/hotspot.png"
+          ath="190" atv="10"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+          onclick="loadsceneM(room1_4);"
+     />
+	 
+	 <hotspot name="spotRoom1_3-8" url="%SWFPATH%/sources/hotspot.png"
+          ath="280" atv="10"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+          onclick="loadsceneM(room1_8);"
+     /> 
+	 
+	<!-- ЭКСПОЗИЦИИ: -->
+	<hotspot name="spotExpo_filials1_Room1_3" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="65" atv="-5"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/filials/all_up.jpg);"
+         
+    />
+	
+	<hotspot name="spotExpo_filials2_Room1_3" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="65" atv="10"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/filials/all_down.jpg);"
+         
+    />
+	
+	<hotspot name="spotExpo_econom1_Room1_3" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="105" atv="-5"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/econom/all_up.jpg);"
+         
+    />
+	
+	<hotspot name="spotExpo_econom2_Room1_3" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="105" atv="15"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/econom/all_down.jpg);"
+         
+    />
+	
+	<hotspot name="spotExpo_bio1_Room1_3" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="143" atv="-5"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/bio/all_up.jpg);"
+         
+    />
+	
+	<hotspot name="spotExpo_bio2_Room1_3" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="143" atv="15"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/bio/all_down.jpg);"
+         
+    />
+	
+	<hotspot name="spotExpo_vit21_Room1_3" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="238" atv="-5"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/vit2/all_up.jpg);"
+         
+    />
+	
+	<hotspot name="spotExpo_vit22_Room1_3" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="238" atv="15"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/vit2/all_down.jpg);"
+         
+    />
+	
+	<hotspot name="spotExpo_vit11_Room1_3" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="318" atv="-15"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/vit1/all_up.jpg);"
+         
+    />
+	
+	<hotspot name="spotExpo_vit12_Room1_3" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="318" atv="0"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/vit1/all_middle.jpg);"
+         
+    />
+	
+		<hotspot name="spotExpo_vit13_Room1_3" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="318" atv="16"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/vit1/all_down.jpg);"
+         
+    />
+	
+</scene>  
+
+<scene name="room1_4" onstart="start_scene(4);">
+    <view hlookat="180" vlookat="0" fovtype="MFOV" fov="90" maxpixelzoom="0.0" fovmin="90" fovmax="90" limitview="lookat" hlookatmin="-360" hlookatmax="360" vlookatmin="0" vlookatmax="0"/>
+    <image>
+      <cube url="%SWFPATH%/sources/Panor/room1/4/room1_4_%s.jpg" />
+    </image>
+	
+	
+	 <!-- КОМНАТЫ: -->
+	 <hotspot name="spotRoom1_4-3" url="%SWFPATH%/sources/hotspot.png"
+          ath="10" atv="10"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+          onclick="loadsceneM(room1_3, 10);"
+     />
+	 
+	 <hotspot name="spotRoom1_4-5" url="%SWFPATH%/sources/hotspot.png"
+          ath="180" atv="10"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+          onclick="loadsceneM(room1_5, 70);"
+     />
+	 
+	 <hotspot name="spotRoom1_4-7" url="%SWFPATH%/sources/hotspot.png"
+          ath="272" atv="10"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+          onclick="loadsceneM(room1_7);"
+     />
+	 
+	<!-- ЭКСПОЗИЦИИ: -->
+	<hotspot name="spotExpo_medal1_Room1_4" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="135" atv="20"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/medals.jpg);"
+    />
+	
+	<hotspot name="spotExpo_bio1_Room1_4" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="62" atv="-5"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/bio/all_up.jpg);"
+         
+    />
+	
+	<hotspot name="spotExpo_bio2_Room1_4" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="62" atv="15"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/bio/all_down.jpg);"
+         
+    />
+	
+	<hotspot name="spotExpo_ftf1_Room1_4" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="105" atv="-5"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/phis_teh/all_up.jpg);"
+         
+    />
+	
+	<hotspot name="spotExpo_ftf2_Room1_4" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="105" atv="15"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/phis_teh/all_down.jpg);"
+         
+    />
+	
+    <hotspot name="spotExpo_lenin_Room1_4" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="235" atv="15"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/lenin/all.jpg);"
+         
+    />	 
+	
+	
+	 <hotspot name="spotExpo_vit21_Room1_4" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="305" atv="-5"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/vit2/all_up.jpg);"
+         
+    />
+	
+	<hotspot name="spotExpo_vit22_Room1_4" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="305" atv="15"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/vit2/all_down.jpg);"
+         
+    />
+	 
+	 <!-- КАРТИНЫ: -->
+	 <hotspot name="spotPicture1_Room1_4" url="%SWFPATH%/sources/hotspot_picture.png"
+          ath="170" atv="18"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadPicture(%SWFPATH%/sources/photo/room_I/paintings/paintings_man.jpg, div_paint_nikandr); "
+          
+     />
+	 
+	 <!-- АЙТЕМЫ: -->
+	 <hotspot name="spotItem1_Room1_4" url="%SWFPATH%/sources/hotspot_picture.png"
+          ath="179" atv="16"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadPicture(%SWFPATH%/sources/photo/room_I/80_years.jpg, div_item_80_years); "
+          
+     />
+	 
+	 <hotspot name="spotItem2_Room1_4" url="%SWFPATH%/sources/hotspot_picture.png"
+          ath="131" atv="15"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadPicture(%SWFPATH%/sources/photo/room_I/trophey.jpg, div_item_promfect); "
+          
+    />
+	 
+	<!-- ТЕКСТЫ: -->
+	<hotspot name="spotText1_Room1_4" url="%SWFPATH%/sources/hotspot_picture.png"
+          ath="127" atv="13"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadText(div_stand);"  
+    />
+	 
+</scene> 
+
+
+<scene name="room1_5" onstart="start_scene(5);">
+    <view hlookat="180" vlookat="0" fovtype="MFOV" fov="90" maxpixelzoom="0.0" fovmin="90" fovmax="90" 
+		  limitview="lookat" hlookatmin="-360" hlookatmax="360" vlookatmin="0" vlookatmax="0"/>
+    <image>
+      <cube url="%SWFPATH%/sources/Panor/room1/5/room1_5_%s.jpg" />
+    </image>
+	
+	 <hotspot name="spotRoom1_5-4" url="%SWFPATH%/sources/hotspot.png"
+          ath="-110" atv="10"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+          onclick="loadsceneM(room1_4,10);"
+     />
+	 
+	  <hotspot name="spotRoom1_5-6" url="%SWFPATH%/sources/hotspot.png"
+          ath="160" atv="10"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+          onclick="loadsceneM(room1_6, 120);"
+     />
+	 
+	<!-- ЭКСПОЗИЦИИ: -->
+	<hotspot name="spotExpo_historystand1_Room1_5" url="%SWFPATH%/sources/hotspot_exposition.png"
+			 ath="65" atv="5"
+			 crop="0|0|26|26" onovercrop="0|26|26|26"
+			 onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/history_stand/history_stand1.jpg);"
+         
+    />
+	
+	<hotspot name="spotExpo_medal1_Room1_5" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="-75" atv="23"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/medals.jpg);"
+    />
+	
+	<hotspot name="spotExpo_ftf1_Room1_5" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="-90" atv="-3"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/phis_teh/all_up.jpg);"
+         
+    />
+	
+	<hotspot name="spotExpo_ftf2_Room1_5" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="-90" atv="12"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/phis_teh/all_down.jpg);"
+         
+    />
+
+	<hotspot name="spotExpo_lenin_Room1_5" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="195" atv="10"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/lenin/all.jpg);"
+         
+    />	 
+	<!-- ПРЕДМЕТЫ: -->
+	<hotspot name="spotItem1_Room1_5" url="%SWFPATH%/sources/hotspot_picture.png"
+          ath="-67" atv="19"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadPicture(%SWFPATH%/sources/photo/room_I/trophey.jpg, div_item_promfect); "
+          
+    />
+	 
+	<!-- ТЕКСТЫ: -->
+	<hotspot name="spotText1_Room1_5" url="%SWFPATH%/sources/hotspot_picture.png"
+          ath="97" atv="6"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadText(div_chronicle1);"
+    />
+	
+	<hotspot name="spotText2_Room1_5" url="%SWFPATH%/sources/hotspot_picture.png"
+          ath="-67" atv="0"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadText(div_stand);"  
+    />
+</scene> 
+
+
+<scene name="room1_6" onstart="start_scene(6);">
+    <view hlookat="180" vlookat="0" fovtype="MFOV" fov="90" maxpixelzoom="0.0" fovmin="90" fovmax="90" limitview="lookat" hlookatmin="-360" hlookatmax="360" vlookatmin="0" vlookatmax="0"/>
+    <image>
+      <cube url="%SWFPATH%/sources/Panor/room1/6/room1_6_%s.jpg" />
+    </image>
+	
+	 <hotspot name="spotRoom1_6-5" url="%SWFPATH%/sources/hotspot.png"
+          ath="-60" atv="10"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+          onclick="loadsceneM(room1_5, 70);"
+     />
+	 
+	 <hotspot name="spotRoom1_6-7" url="%SWFPATH%/sources/hotspot.png"
+          ath="210" atv="10"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+          onclick="loadsceneM(room1_7,95);"
+     />
+	 
+	 <hotspot name="spotRoom1_6-15" url="%SWFPATH%/sources/hotspot.png"
+          ath="120" atv="10"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+          onclick="loadsceneM(room1_15,70);"
+     />
+	 
+	<!-- ЭКСПОЗИЦИИ: -->
+	<hotspot name="spotExpo_historystand1_Room1_6" url="%SWFPATH%/sources/hotspot_exposition.png"
+			 ath="10" atv="-5"
+			 crop="0|0|26|26" onovercrop="0|26|26|26"
+			 onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/history_stand/history_stand2.jpg);"
+         
+    />
+	
+	<hotspot name="spotExpo_historystand2_Room1_6" url="%SWFPATH%/sources/hotspot_exposition.png"
+			 ath="13" atv="20"
+			 crop="0|0|26|26" onovercrop="0|26|26|26"
+			 onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/history_stand/history_paper2.jpg);"
+         
+    />
+	
+	<hotspot name="spotExpo_historystand3_Room1_6" url="%SWFPATH%/sources/hotspot_exposition.png"
+			 ath="-10" atv="16"
+			 crop="0|0|26|26" onovercrop="0|26|26|26"
+			 onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/history_stand/history_paper1.jpg);"
+         
+    />
+	
+	<hotspot name="spotExpo_historystand4_Room1_6" url="%SWFPATH%/sources/hotspot_exposition.png"
+			 ath="40" atv="20"
+			 crop="0|0|26|26" onovercrop="0|26|26|26"
+			 onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/history_stand/history_paper3.jpg);"
+         
+    />
+	
+	<hotspot name="spotExpo_lenin_Room1_6" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="245" atv="15"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/lenin/all.jpg);"
+         
+    />	
+	 
+	<hotspot name="spotExpo_art_Room1_6" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="170" atv="15"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/art/all.jpg);"
+         
+	/>	
+	 
+	 <!-- КАРТИНЫ: -->
+	 <hotspot name="spotPicture1_Room1_6" url="%SWFPATH%/sources/hotspot_picture.png"
+          ath="-40" atv="18"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadPicture(%SWFPATH%/sources/photo/room_I/paintings/paintings_man.jpg, div_paint_nikandr); "
+          
+     />
+	 
+	 <!-- АЙТЕМЫ: -->
+	 <hotspot name="spotItem1_Room1_6" url="%SWFPATH%/sources/hotspot_picture.png"
+          ath="-34" atv="20"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadPicture(%SWFPATH%/sources/photo/room_I/80_years.jpg, div_item_80_years); "
+          
+     />
+	 
+	 <!-- ТЕКСТЫ: -->
+	 <hotspot name="spotText1_Room1_6" url="%SWFPATH%/sources/hotspot_picture.png"
+          ath="-29" atv="3"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadText(div_chronicle1);"
+          
+     />
+	 
+	 <hotspot name="spotText2_Room1_6" url="%SWFPATH%/sources/hotspot_picture.png"
+          ath="70" atv="5"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadText(div_chronicle2);"
+          
+     />
+	 
+</scene>
+
+
+<scene name="room1_7" onstart="start_scene(7);">
+    <view hlookat="5" vlookat="0" fovtype="MFOV" fov="90" maxpixelzoom="0.0" fovmin="90" fovmax="90" limitview="lookat" hlookatmin="-360" hlookatmax="360" vlookatmin="0" vlookatmax="0"/>
+    <image>
+      <cube url="%SWFPATH%/sources/Panor/room1/7/room1_7_%s.jpg" />
+    </image>
+	
+	 <hotspot name="spotRoom1_7-4" url="%SWFPATH%/sources/hotspot.png"
+          ath="185" atv="10"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+          onclick="loadsceneM(room1_4, 90);"
+     />
+	 
+	 <hotspot name="spotRoom1_7-6" url="%SWFPATH%/sources/hotspot.png"
+          ath="270" atv="10"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+          onclick="loadsceneM(room1_6, 0);"
+     />
+	 
+	 <hotspot name="spotRoom1_7-8" url="%SWFPATH%/sources/hotspot.png"
+          ath="95" atv="10"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+          onclick="loadsceneM(room1_8, 95);"
+     />
+	 
+	 <hotspot name="spotRoom1_7-14" url="%SWFPATH%/sources/hotspot.png"
+          ath="5" atv="10"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+          onclick="loadsceneM(room1_14, 0);"
+     />
+	 
+	<!-- ЭКСПОЗИЦИИ: -->
+	<hotspot name="spotExpo_maket_Room1_7" url="%SWFPATH%/sources/hotspot_exposition.png"
+			 ath="12" atv="18"
+			 crop="0|0|26|26" onovercrop="0|26|26|26"
+			 onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/maket.jpg);"
+         
+    />
+	
+	<hotspot name="spotExpo_lenin_Room1_7" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="227" atv="15"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/lenin/all.jpg);"
+         
+    />	
+	 
+	<hotspot name="spotExpo_art_Room1_7" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="-45" atv="15"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/art/all.jpg);"
+         
+	/>	
+	
+	<hotspot name="spotExpo_vit21_Room1_7" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="145" atv="-5"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/vit2/all_up.jpg);"
+         
+    />
+	
+	<hotspot name="spotExpo_vit22_Room1_7" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="145" atv="15"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/vit2/all_down.jpg);"
+         
+    />
+	
+		<hotspot name="spotExpo_vit31_Room1_7" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="50" atv="-5"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/vit3/all_up.jpg);"
+         
+    />
+	
+	<hotspot name="spotExpo_vit32_Room1_7" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="50" atv="15"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/vit3/all_down.jpg);"
+         
+    />
+	 
+	 
+</scene> 
+
+
+<scene name="room1_8" onstart="start_scene(8);">
+    <view hlookat="5" vlookat="0" fovtype="MFOV" fov="90" maxpixelzoom="0.0" fovmin="90" fovmax="90" limitview="lookat" hlookatmin="-360" hlookatmax="360" vlookatmin="0" vlookatmax="0"/>
+    <image>
+      <cube url="%SWFPATH%/sources/Panor/room1/8/room1_8_%s.jpg" />
+    </image>
+	
+	 <hotspot name="spotRoom1_8-3" url="%SWFPATH%/sources/hotspot.png"
+          ath="185" atv="10"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+          onclick="loadsceneM(room1_3, 90);"
+     />
+	 
+	 <hotspot name="spotRoom1_8-7" url="%SWFPATH%/sources/hotspot.png"
+          ath="275" atv="10"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+          onclick="loadsceneM(room1_7, 270);"
+     />
+	 
+	 <hotspot name="spotRoom1_8-9" url="%SWFPATH%/sources/hotspot.png"
+          ath="95" atv="10"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+          onclick="loadsceneM(room1_9, 70);"
+     />
+	 
+	 <hotspot name="spotRoom1_8-13" url="%SWFPATH%/sources/hotspot.png"
+          ath="5" atv="10"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+          onclick="loadsceneM(room1_13, 80);"
+     />
+	 
+	<!-- ЭКСПОЗИЦИИ: -->
+    <hotspot name="spotExpo_khytor_Room1_8" url="%SWFPATH%/sources/hotspot_exposition.png"
+			 ath="92" atv="14"
+			 crop="0|0|26|26" onovercrop="0|26|26|26"
+			 onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/kuban_things/kuban_country2.jpg);"
+         
+    />
+	
+	<hotspot name="spotExpo_vit11_Room1_8" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="135" atv="-15"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/vit1/all_up.jpg);"
+         
+    />
+	
+	<hotspot name="spotExpo_vit12_Room1_8" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="135" atv="0"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/vit1/all_middle.jpg);"
+         
+    />
+	
+		<hotspot name="spotExpo_vit13_Room1_8" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="135" atv="16"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/vit1/all_down.jpg);"
+         
+    />
+	
+	<hotspot name="spotExpo_vit21_Room1_8" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="233" atv="-5"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/vit2/all_up.jpg);"
+         
+    />
+	
+	<hotspot name="spotExpo_vit22_Room1_8" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="233" atv="15"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/vit2/all_down.jpg);"
+         
+    />
+	
+	<hotspot name="spotExpo_vit31_Room1_8" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="315" atv="-5"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/vit3/all_up.jpg);"
+         
+    />
+	
+	<hotspot name="spotExpo_vit32_Room1_8" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="315" atv="15"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/vit3/all_down.jpg);"
+         
+    />
+	
+	<hotspot name="spotExpo_ancient1_Room1_8" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="50" atv="-18"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/ancient/all_up.jpg);"
+         
+    />
+	
+	<hotspot name="spotExpo_ancient2_Room1_8" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="50" atv="0"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/ancient/all_middle.jpg);"
+         
+    />
+	
+		<hotspot name="spotExpo_ancient3_Room1_8" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="50" atv="18"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/ancient/all_down.jpg);"
+         
+    />
+	 
+</scene>   
+
+
+  
+<scene name="room1_9" onstart="start_scene(9);">
+    <view hlookat="0" vlookat="0" fovtype="MFOV" fov="90" maxpixelzoom="0.0" fovmin="90" fovmax="90" limitview="lookat" hlookatmin="-360" hlookatmax="360" vlookatmin="0" vlookatmax="0"/>
+    <image>
+      <cube url="%SWFPATH%/sources/Panor/room1/9/room1_9_%s.jpg" />
+    </image>
+	
+	 <hotspot name="spotRoom1_9-1" url="%SWFPATH%/sources/hotspot.png"
+          ath="100" atv="10"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+          onclick="loadsceneM(room1_1, -50);"
+     />
+	 
+	 <hotspot name="spotRoom1_9-2" url="%SWFPATH%/sources/hotspot.png"
+          ath="150" atv="10"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+          onclick="loadsceneM(room1_2, 40);"
+     />
+	 
+	 <hotspot name="spotRoom1_9-8" url="%SWFPATH%/sources/hotspot.png"
+          ath="-115" atv="10"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+          onclick="loadsceneM(room1_8, 275);"
+     />
+	 
+	 <hotspot name="spotRoom1_9-12" url="%SWFPATH%/sources/hotspot.png"
+          ath="0" atv="10"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+          onclick="loadsceneM(room1_12);"
+     />
+    
+	<!-- ЭКСПОЗИЦИИ: -->
+	<hotspot name="spotExpo_vit11_Room1_9" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="-163" atv="-15"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/vit1/all_up.jpg);"
+         
+    />
+	
+	<hotspot name="spotExpo_vit12_Room1_9" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="-163" atv="0"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/vit1/all_middle.jpg);"
+         
+    />
+	
+		<hotspot name="spotExpo_vit13_Room1_9" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="-163" atv="16"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/vit1/all_down.jpg);"
+         
+    />
+	
+	<hotspot name="spotExpo_ancient1_Room1_9" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="-70" atv="-18"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/ancient/all_up.jpg);"
+         
+    />
+	
+	<hotspot name="spotExpo_ancient2_Room1_9" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="-70" atv="0"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/ancient/all_middle.jpg);"
+         
+    />
+	
+		<hotspot name="spotExpo_ancient3_Room1_9" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="-70" atv="18"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/ancient/all_down.jpg);"
+         
+    />
+	 
+</scene>  
+  
+  
+  
+<scene name="room1_10" onstart="start_scene(10);">
+    <view hlookat="0" vlookat="0" fovtype="MFOV" fov="90" maxpixelzoom="0.0" fovmin="90" fovmax="90" limitview="lookat" hlookatmin="-360" hlookatmax="360" vlookatmin="0" vlookatmax="0"/>
+    <image>
+      <cube url="%SWFPATH%/sources/Panor/room1/10/room1_10_%s.jpg" />
+    </image>
+	
+	 <hotspot name="spotRoom1_10-1" url="%SWFPATH%/sources/hotspot.png"
+          ath="-120" atv="10"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+          onclick="loadsceneM(room1_1, 70);"
+     />
+	 
+	 <hotspot name="spotRoom1_10-2" url="%SWFPATH%/sources/hotspot.png"
+          ath="-80" atv="10"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+          onclick="loadsceneM(room1_2, 40);"
+     />
+	 
+	 <hotspot name="spotRoom1_10-11" url="%SWFPATH%/sources/hotspot.png"
+          ath="-290" atv="10"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+          onclick="loadsceneM(room1_11, -60);"
+     />
+	 
+	 <!-- КАРТИНЫ: -->
+	 <hotspot name="spotPicture1_Room1_10" url="%SWFPATH%/sources/hotspot_picture.png"
+          ath="176" atv="9"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadPicture(%SWFPATH%/sources/photo/room_I/paintings/paintings_yakubin.jpg, div_paint_Yakubin); "
+          
+     />
+	 
+	 <hotspot name="spotPicture2_Room1_10" url="%SWFPATH%/sources/hotspot_picture.png"
+          ath="103" atv="6"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadPicture(%SWFPATH%/sources/photo/room_I/paintings/paintings_khytoryanskii.jpg, div_paint_khytoryanskii); "
+          
+     />
+	 
+	 <!-- ТЕКСТЫ: -->
+	 <hotspot name="spotText1_Room1_10" url="%SWFPATH%/sources/hotspot_picture.png"
+          ath="135" atv="6"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadText(div_WW2);"
+          
+     />
+	 
+	<!-- АЙТЕМЫ: -->
+	<hotspot name="spotItem1_Room1_10" url="%SWFPATH%/sources/hotspot_picture.png"
+          ath="137" atv="16"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadPicture(%SWFPATH%/sources/photo/room_I/WWII/statue_old_lady.jpg, div_item_old_lady); "
+          
+    />
+	 
+	<hotspot name="spotItem2_Room1_10" url="%SWFPATH%/sources/hotspot_picture.png"
+          ath="116" atv="15"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadPicture(%SWFPATH%/sources/photo/room_I/WWII/statue_soldier_two.jpg, div_item_soldier_two); "
+          
+    />
+	 
+	<hotspot name="spotItem3_Room1_10" url="%SWFPATH%/sources/hotspot_picture.png"
+          ath="182" atv="14"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadPicture(%SWFPATH%/sources/photo/room_I/WWII/statue_soldier_woman.jpg, div_item_soldier_woman); "
+          
+    />
+	 
+	<hotspot name="spotItem4_Room1_10" url="%SWFPATH%/sources/hotspot_picture.png"
+          ath="99" atv="15"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadPicture(%SWFPATH%/sources/photo/room_I/WWII/statue_soldier_man.jpg, div_item_soldier_man); "
+          
+    />
+	
+	<hotspot name="spotItem5_Room1_10" url="%SWFPATH%/sources/hotspot_picture.png"
+          ath="-329" atv="15"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadPicture(%SWFPATH%/sources/photo/room_I/kuban_things/kuban_samovar.jpg, div_item_samovar); "
+          
+    />
+	 
+	<hotspot name="spotItem6_Room1_10" url="%SWFPATH%/sources/hotspot_picture.png"
+          ath="-315" atv="15"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadPicture(%SWFPATH%/sources/photo/room_I/kuban_things/kuban_pryalka.jpg, div_item_pryalka); "
+          
+    /> 
+	
+	<hotspot name="spotItem7_Room1_10" url="%SWFPATH%/sources/hotspot_picture.png"
+          ath="160" atv="16"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadPicture(%SWFPATH%/sources/photo/room_I/WWII/statue_soldier_jukov_prize.jpg, div_item_soldier_prize); "
+          
+    /> 
+</scene>  
+
+<scene name="room1_11" onstart="start_scene(11);">
+    <view hlookat="10" vlookat="0" fovtype="MFOV" fov="90" maxpixelzoom="0.0" fovmin="90" fovmax="90" limitview="lookat" hlookatmin="-360" hlookatmax="360" vlookatmin="0" vlookatmax="0"/>
+    <image>
+      <cube url="%SWFPATH%/sources/Panor/room1/11/room1_11_%s.jpg" />
+    </image>
+	
+	 <hotspot name="spotRoom1_11-10" url="%SWFPATH%/sources/hotspot.png"
+          ath="120" atv="10"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+          onclick="loadsceneM(room1_10, -120);"
+     />
+	 
+	  <hotspot name="spotRoom1_11-12" url="%SWFPATH%/sources/hotspot.png"
+          ath="-145" atv="10"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+          onclick="loadsceneM(room1_12, -85);"
+     />
+	 
+	<!-- ЭКСПОЗИЦИИ: -->
+    <hotspot name="spotExpo_khytor_Room1_11" url="%SWFPATH%/sources/hotspot_exposition.png"
+			 ath="-190" atv="14"
+			 crop="0|0|26|26" onovercrop="0|26|26|26"
+			 onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/kuban_things/kuban_country2.jpg);"
+         
+    />
+	
+	<hotspot name="spotExpo_fyp1_Room1_11" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="-6" atv="-5"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/fyp/all_up.jpg);"
+         
+    />
+	
+	<hotspot name="spotExpo_fyp2_Room1_11" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="-6" atv="15"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/fyp/all_down.jpg);"
+         
+    />
+	
+	<hotspot name="spotExpo_his1_Room1_11" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="-120" atv="-4"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/his/all_up.jpg);"
+         
+    />
+	
+	<hotspot name="spotExpo_his2_Room1_11" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="-120" atv="10"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/his/all_down.jpg);"
+         
+    />
+	
+	<!-- КАРТИНЫ: -->
+	<hotspot name="spotPicture1_Room1_11" url="%SWFPATH%/sources/hotspot_picture.png"
+          ath="67" atv="8"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadPicture(%SWFPATH%/sources/photo/room_I/paintings/paintings_khytoryanskii.jpg, div_paint_khytoryanskii); "
+          
+    />
+	 
+	<!-- АЙТЕМЫ: -->
+	<hotspot name="spotItem1_Room1_11" url="%SWFPATH%/sources/hotspot_picture.png"
+          ath="-60" atv="-10"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadPicture(%SWFPATH%/sources/photo/room_I/costumes/costume_set2.jpg, div_item_costume_set2); "
+          
+    />
+	 
+	<hotspot name="spotItem2_Room1_11" url="%SWFPATH%/sources/hotspot_picture.png"
+          ath="-180" atv="15"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadPicture(%SWFPATH%/sources/photo/room_I/kuban_things/kuban_samovar.jpg, div_item_samovar); "
+          
+    />
+	 
+	<hotspot name="spotItem3_Room1_11" url="%SWFPATH%/sources/hotspot_picture.png"
+          ath="-180" atv="18"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadPicture(%SWFPATH%/sources/photo/room_I/kuban_things/kuban_pryalka.jpg, div_item_pryalka); "
+          
+    /> 
+	
+	<hotspot name="spotItem4_Room1_11" url="%SWFPATH%/sources/hotspot_picture.png"
+          ath="-205" atv="20"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadPicture(%SWFPATH%/sources/photo/room_I/kuban_things/kuban_washing.jpg, div_item_vine); "
+          
+    />
+	
+	<hotspot name="spotItem5_Room1_11" url="%SWFPATH%/sources/hotspot_picture.png"
+          ath="82" atv="19"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadPicture(%SWFPATH%/sources/photo/room_I/WWII/statue_time_capsule.jpg, div_item_time_capsule); "
+          
+    />
+	
+	<hotspot name="spotItem6_Room1_11" url="%SWFPATH%/sources/hotspot_picture.png"
+          ath="-175" atv="19"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadPicture(%SWFPATH%/sources/photo/room_I/kuban_things/kuban_stupka.jpg, div_item_stupka); "
+          
+    />
+	
+	 
+</scene>  
+
+
+<scene name="room1_12" onstart="start_scene(12);">
+    <view hlookat="15" vlookat="0" fovtype="MFOV" fov="90" maxpixelzoom="0.0" fovmin="90" fovmax="90" limitview="lookat" hlookatmin="-360" hlookatmax="360" vlookatmin="0" vlookatmax="0"/>
+    <image>
+      <cube url="%SWFPATH%/sources/Panor/room1/12/room1_12_%s.jpg" />
+    </image>
+	
+	 <hotspot name="spotRoom1_12-9" url="%SWFPATH%/sources/hotspot.png"
+          ath="185" atv="10"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+          onclick="loadsceneM(room1_9, 150);"
+     />
+	 
+	 <hotspot name="spotRoom1_12-11" url="%SWFPATH%/sources/hotspot.png"
+          ath="85" atv="10"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+          onclick="loadsceneM(room1_11);"
+     />
+	 
+	  <hotspot name="spotRoom1_12-13" url="%SWFPATH%/sources/hotspot.png"
+          ath="-85" atv="10"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+          onclick="loadsceneM(room1_13, -5);"
+     />
+	 
+	<!-- ЭКСПОЗИЦИИ: -->
+    <hotspot name="spotExpo_khytor_Room1_12" url="%SWFPATH%/sources/hotspot_exposition.png"
+			 ath="155" atv="20"
+			 crop="0|0|26|26" onovercrop="0|26|26|26"
+			 onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/kuban_things/kuban_country2.jpg);"
+         
+    />
+	
+	<hotspot name="spotExpo_his1_Room1_12" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="45" atv="-5"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/his/all_up.jpg);"
+         
+    />
+	
+	<hotspot name="spotExpo_his2_Room1_12" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="45" atv="13"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/his/all_down.jpg);"
+         
+    />
+
+		<hotspot name="spotExpo_ancient1_Room1_12" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="228" atv="-18"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/ancient/all_up.jpg);"
+         
+    />
+	
+	<hotspot name="spotExpo_ancient2_Room1_12" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="228" atv="0"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/ancient/all_middle.jpg);"
+         
+    />
+	
+		<hotspot name="spotExpo_ancient3_Room1_12" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="228" atv="18"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/ancient/all_down.jpg);"
+         
+    />
+	 
+	 
+	<!-- АЙТЕМЫ: -->
+	<hotspot name="spotItem1_Room1_12" url="%SWFPATH%/sources/hotspot_picture.png"
+          ath="-30" atv="-10"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadPicture(%SWFPATH%/sources/photo/room_I/costumes/costume_set1.jpg, div_item_costume_set1); "
+          
+    />
+	
+	<hotspot name="spotItem2_Room1_12" url="%SWFPATH%/sources/hotspot_picture.png"
+          ath="116" atv="15"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadPicture(%SWFPATH%/sources/photo/room_I/kuban_things/kuban_samovar.jpg, div_item_samovar); "
+          
+    />
+	 
+	<hotspot name="spotItem3_Room1_12" url="%SWFPATH%/sources/hotspot_picture.png"
+          ath="106" atv="15"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadPicture(%SWFPATH%/sources/photo/room_I/kuban_things/kuban_pryalka.jpg, div_item_pryalka); "
+          
+    /> 
+	
+	<hotspot name="spotItem4_Room1_12" url="%SWFPATH%/sources/hotspot_picture.png"
+          ath="98" atv="9"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadPicture(%SWFPATH%/sources/photo/room_I/kuban_things/kuban_soldier.jpg, div_item_soldier_bust); "
+          
+    />
+	
+	<hotspot name="spotItem5_Room1_12" url="%SWFPATH%/sources/hotspot_picture.png"
+          ath="149" atv="19"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadPicture(%SWFPATH%/sources/photo/room_I/kuban_things/kuban_stupka.jpg, div_item_stupka); "
+          
+    />
+	 
+</scene>  
+
+<scene name="room1_13" onstart="start_scene(13);">
+    <view hlookat="10" vlookat="0" fovtype="MFOV" fov="90" maxpixelzoom="0.0" fovmin="90" fovmax="90" limitview="lookat" hlookatmin="-360" hlookatmax="360" vlookatmin="0" vlookatmax="0"/>
+    <image>
+      <cube url="%SWFPATH%/sources/Panor/room1/13/room1_13_%s.jpg" />
+    </image>
+	
+	 <hotspot name="spotRoom1_13-8" url="%SWFPATH%/sources/hotspot.png"
+          ath="260" atv="10"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+          onclick="loadsceneM(room1_8, 90);"
+     />
+	 
+	 
+	 <hotspot name="spotRoom1_13-12" url="%SWFPATH%/sources/hotspot.png"
+          ath="165" atv="10"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+          onclick="loadsceneM(room1_12, 85);"
+     />
+	 
+	 <hotspot name="spotRoom1_13-14" url="%SWFPATH%/sources/hotspot.png"
+          ath="-5" atv="10"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+          onclick="loadsceneM(room1_14, -50);"
+     />
+	 
+	 
+	 
+	<!-- ЭКСПОЗИЦИИ: -->
+    <hotspot name="spotExpo_maket_Room1_13" url="%SWFPATH%/sources/hotspot_exposition.png"
+			 ath="30" atv="18"
+			 crop="0|0|26|26" onovercrop="0|26|26|26"
+			 onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/maket.jpg);"
+         
+    />
+	
+	<hotspot name="spotExpo_rgf1_Room1_13" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="83" atv="-7"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/rgf/all_up.jpg);"
+         
+    />
+	
+	<hotspot name="spotExpo_rgf2_Room1_13" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="83" atv="13"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/rgf/all_down.jpg);"
+         
+    />
+	
+	<hotspot name="spotExpo_vit31_Room1_13" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="-50" atv="-5"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/vit3/all_up.jpg);"
+         
+    />
+	
+	<hotspot name="spotExpo_vit32_Room1_13" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="-50" atv="15"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/vit3/all_down.jpg);"
+         
+    />
+	 
+	<hotspot name="spotExpo_ancient1_Room1_13" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="202" atv="-18"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/ancient/all_up.jpg);"
+         
+    />
+	
+	<hotspot name="spotExpo_ancient2_Room1_13" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="202" atv="0"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/ancient/all_middle.jpg);"
+         
+    />
+	
+		<hotspot name="spotExpo_ancient3_Room1_13" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="202" atv="18"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/ancient/all_down.jpg);"
+         
+    />
+	 
+	
+</scene>  
+
+
+
+<scene name="room1_14" onstart="start_scene(14);">
+    <view hlookat="0" vlookat="0" fovtype="MFOV" fov="90" maxpixelzoom="0.0" fovmin="90" fovmax="90" limitview="lookat" hlookatmin="-360" hlookatmax="360" vlookatmin="0" vlookatmax="0"/>
+    <image>
+      <cube url="%SWFPATH%/sources/Panor/room1/14/room1_14_%s.jpg" />
+    </image>
+	
+	 <hotspot name="spotRoom1_14-7" url="%SWFPATH%/sources/hotspot.png"
+          ath="225" atv="10"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+          onclick="loadsceneM(room1_7, 185);"
+     />
+	 
+	 <hotspot name="spotRoom1_14-13" url="%SWFPATH%/sources/hotspot.png"
+          ath="140" atv="10"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+          onclick="loadsceneM(room1_13,165);"
+     />
+	 
+	 <hotspot name="spotRoom1_14-15" url="%SWFPATH%/sources/hotspot.png"
+          ath="-50" atv="10"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+          onclick="loadsceneM(room1_15, -60);"
+     />
+	 
+	<!-- ЭКСПОЗИЦИИ: -->
+	<hotspot name="spotExpo_fpm1_Room1" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="-10" atv="20"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/fpm/all.jpg);"
+         
+    />
+	   
+	<hotspot name="spotExpo_fpm2_Room1" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="-10" atv="2"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/fpm/all_up.jpg);"
+         
+    />
+	
+	<hotspot name="spotExpo_art_Room1_14" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="-90" atv="15"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/art/all.jpg);"
+         
+	/>	
+	
+	<hotspot name="spotExpo_vit31_Room1_14" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="185" atv="-5"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/vit3/all_up.jpg);"
+         
+    />
+	
+	<hotspot name="spotExpo_vit32_Room1_14" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="185" atv="15"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/vit3/all_down.jpg);"
+         
+    />
+	 
+</scene>   
+
+
+<scene name="room1_15" onstart="start_scene(15);">
+    <view hlookat="180" vlookat="0" fovtype="MFOV" fov="90" maxpixelzoom="0.0" fovmin="90" fovmax="90" limitview="lookat" hlookatmin="-360" hlookatmax="360" vlookatmin="0" vlookatmax="0"/>
+    <image>
+      <cube url="%SWFPATH%/sources/Panor/room1/15/room1_15_%s.jpg" />
+    </image>
+	
+	 <hotspot name="spotRoom1_15-6" url="%SWFPATH%/sources/hotspot.png"
+          ath="230" atv="10"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+          onclick="loadsceneM(room1_6, -60);"
+     />
+	 
+	 <hotspot name="spotRoom1_15-14" url="%SWFPATH%/sources/hotspot.png"
+          ath="135" atv="10"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+          onclick="loadsceneM(room1_14, 140);"
+     />
+	 
+	 
+	<!-- ЭКСПОЗИЦИИ: -->
+	<hotspot name="spotExpo_fpm1_Room1_15" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="100" atv="20"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/fpm/all.jpg);"
+         
+    />
+	   
+	<hotspot name="spotExpo_fpm2_Room1_15" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="100" atv="2"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/fpm/all_up.jpg);"
+         
+    />
+	   
+	<hotspot name="spotExpo_maket_Room1_15" url="%SWFPATH%/sources/hotspot_exposition.png"
+			 ath="115" atv="18"
+			 crop="0|0|26|26" onovercrop="0|26|26|26"
+			 onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/maket.jpg);"
+         
+	/>
+	   
+	  
+	<hotspot name="spotExpo_historystand1_Room1_15" url="%SWFPATH%/sources/hotspot_exposition.png"
+			 ath="-30" atv="0"
+			 crop="0|0|26|26" onovercrop="0|26|26|26"
+			 onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/history_stand/history_stand3.jpg);"
+         
+    />
+		
+	<hotspot name="spotExpo_art_Room1_15" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="165" atv="15"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_I/art/all.jpg);"
+         
+	/>	
+	   
+	   
+	<!-- ТЕКСТЫ: -->
+	<hotspot name="spotText1_Room1_15" url="%SWFPATH%/sources/hotspot_picture.png"
+          ath="-66" atv="3"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadText(div_chronicle2);"
+          
+    />
+	 
+	<!-- АЙТЕМЫ: -->
+	<hotspot name="spotItem1_Room1_15" url="%SWFPATH%/sources/hotspot_picture.png"
+          ath="70" atv="5"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadPicture(%SWFPATH%/sources/photo/room_I/costumes/costume_sochi_2014.jpg, div_item_costume_sochi_2014); "
+          
+    />
+	
+</scene>   
+
+
+<scene name="room2_1" onstart="start_scene(16);">
+    <view hlookat="140" vlookat="0" fovtype="MFOV" fov="90" maxpixelzoom="0.0" fovmin="90" fovmax="90" limitview="lookat" hlookatmin="-360" hlookatmax="360" vlookatmin="0" vlookatmax="0"/>
+    <image>
+      <cube url="%SWFPATH%/sources/Panor/room2/1/room2_1_enter_%s.jpg" />
+    </image>
+	
+	 <hotspot name="spotChangeToRoom1" url="%SWFPATH%/sources/hotspot.png"
+          ath="10" atv="10"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+          onclick="loadsceneM(room1_2, 210);"
+     />
+	 
+	 <hotspot name="spotRoom2_1-2" url="%SWFPATH%/sources/hotspot.png"
+          ath="-80" atv="10"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+          onclick="loadsceneM(room2_2);"
+     />
+	 
+	 <hotspot name="spotRoom2_1-4" url="%SWFPATH%/sources/hotspot.png"
+          ath="170" atv="10"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+          onclick="loadsceneM(room2_4, 155);"
+     />
+	 
+	 <hotspot name="spotRoom2_1-6" url="%SWFPATH%/sources/hotspot.png"
+          ath="100" atv="10"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+          onclick="loadsceneM(room2_6, 80);"
+     />
+	 
+	 <!-- ТЕКСТЫ: -->
+	<hotspot name="spotText1_Room2_1" url="%SWFPATH%/sources/hotspot_picture.png"
+          ath="-38" atv="3"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadText(div_partners);"
+          
+    />
+</scene> 
+
+<scene name="room2_2" onstart="start_scene(17);">
+    <view hlookat="100" vlookat="0" fovtype="MFOV" fov="90" maxpixelzoom="0.0" fovmin="90" fovmax="90" limitview="lookat" hlookatmin="-360" hlookatmax="360" vlookatmin="0" vlookatmax="0"/>
+    <image>
+      <cube url="%SWFPATH%/sources/Panor/room2/2/room2_2_%s.jpg" />
+    </image>
+	
+	 <hotspot name="spotRoom2_2-1" url="%SWFPATH%/sources/hotspot.png"
+          ath="75" atv="10"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+          onclick="loadsceneM(room2_1, 100);"
+     />
+	 
+	  <hotspot name="spotRoom2_2-3" url="%SWFPATH%/sources/hotspot.png"
+          ath="180" atv="10"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+          onclick="loadsceneM(room2_3, -30);"
+     />
+	 
+	<!-- ЭКСПОЗИЦИИ: -->
+	<hotspot name="spotExpo_medal1_Room22" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="315" atv="16"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_II/stand.jpg);"
+    />
+	
+	 
+	<!-- КАРТИНЫ: -->
+	<hotspot name="spotPicture1_Room2_2" url="%SWFPATH%/sources/hotspot_picture.png"
+          ath="39" atv="3"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadPicture(%SWFPATH%/sources/photo/room_II/paintings/painting_koshelkov.jpg, div_paint_koshelkov); "
+          
+    />
+	
+	<hotspot name="spotPicture2_Room2_2" url="%SWFPATH%/sources/hotspot_picture.png"
+          ath="28" atv="7"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadPicture(%SWFPATH%/sources/photo/room_II/paintings/painting_girl.jpg, div_paint_koshelkov_girl1); "
+          
+    />
+	
+	<hotspot name="spotPicture3_Room2_2" url="%SWFPATH%/sources/hotspot_picture.png"
+          ath="2" atv="7"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadPicture(%SWFPATH%/sources/photo/room_II/paintings/painting_lady.jpg, div_paint_koshelkov_lady); "
+          
+    />
+	
+	<hotspot name="spotPicture4_Room2_2" url="%SWFPATH%/sources/hotspot_picture.png"
+          ath="-30" atv="7"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadPicture(%SWFPATH%/sources/photo/room_II/paintings/painting_girl2.jpg, div_paint_koshelkov_girl2); "
+          
+    />
+	
+	<hotspot name="spotPicture5_Room2_2" url="%SWFPATH%/sources/hotspot_picture.png"
+          ath="172" atv="16"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadPicture(%SWFPATH%/sources/photo/room_II/paintings/painting_kravchenko.jpg, div_paint_kravchenko); "
+          
+    />
+	 
+	<!-- АЙТЕМЫ: -->
+	<hotspot name="spotItem1_Room2_2" url="%SWFPATH%/sources/hotspot_picture.png"
+          ath="4" atv="14"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadPicture(%SWFPATH%/sources/photo/room_II/war/statue_veteran.jpg, div_item_veteran); "
+          
+    />
+</scene>  
+
+<scene name="room2_3" onstart="start_scene(18);">
+    <view hlookat="-50" vlookat="0" fovtype="MFOV" fov="90" maxpixelzoom="0.0" fovmin="90" fovmax="90" limitview="lookat" hlookatmin="-360" hlookatmax="360" vlookatmin="0" vlookatmax="0"/>
+    <image>
+      <cube url="%SWFPATH%/sources/Panor/room2/3/room2_3_%s.jpg" />
+    </image>
+	
+	 <hotspot name="spotRoom2_3-2" url="%SWFPATH%/sources/hotspot.png"
+          ath="-120" atv="10"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+          onclick="loadsceneM(room2_2,100);"
+     />
+	 
+	 <hotspot name="spotRoom2_3-4" url="%SWFPATH%/sources/hotspot.png"
+          ath="-30" atv="10"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+          onclick="loadsceneM(room2_4,120);"
+     />
+	 
+	<!-- ЭКСПОЗИЦИИ: -->
+	<hotspot name="spotExpo_jour1_Room23" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="350" atv="15"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_II/journal/all_down.jpg);"
+         
+    />
+	
+	<hotspot name="spotExpo_jour2_Room23" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="350" atv="0"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_II/journal/all_up.jpg);"
+         
+    />
+</scene> 
+
+<scene name="room2_4" onstart="start_scene(19);">
+    <view hlookat="80" vlookat="0" fovtype="MFOV" fov="90" maxpixelzoom="0.0" fovmin="90" fovmax="90" limitview="lookat" hlookatmin="-360" hlookatmax="360" vlookatmin="0" vlookatmax="0"/>
+    <image>
+      <cube url="%SWFPATH%/sources/Panor/room2/4/room2_4_%s.jpg" />
+    </image>
+	
+	 <hotspot name="spotRoom2_4-3" url="%SWFPATH%/sources/hotspot.png"
+          ath="-50" atv="10"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+          onclick="loadsceneM(room2_3, -120);"
+     />
+	 
+	 <hotspot name="spotRoom2_4-1" url="%SWFPATH%/sources/hotspot.png"
+          ath="40" atv="10"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+          onclick="loadsceneM(room2_1, 10);"
+     />
+	 
+	 <hotspot name="spotRoom2_4-5" url="%SWFPATH%/sources/hotspot.png"
+          ath="145" atv="10"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+          onclick="loadsceneM(room2_5, -50);"
+     />
+	 
+	 <hotspot name="spotRoom2_4-6" url="%SWFPATH%/sources/hotspot.png"
+          ath="95" atv="10"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+          onclick="loadsceneM(room2_6, 100);"
+     />
+	 
+	<!-- ЭКСПОЗИЦИИ: -->
+	<hotspot name="spotExpo_urf1_Room24" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="170" atv="15"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_II/urfak/all_down.jpg);"
+         
+    />
+	
+	<hotspot name="spotExpo_urf2_Room24" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="170" atv="0"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_II/urfak/all_up.jpg);"
+         
+    />
+	
+	<hotspot name="spotExpo_jour1_Room24" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="290" atv="15"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_II/journal/all_down.jpg);"
+         
+    />
+	
+	<hotspot name="spotExpo_jour2_Room24" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="290" atv="0"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_II/journal/all_up.jpg);"
+         
+    />
+	
+	<!-- КАРТИНЫ: -->
+	<hotspot name="spotPicture1_Room2_4" url="%SWFPATH%/sources/hotspot_picture.png"
+          ath="307" atv="3"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadPicture(%SWFPATH%/sources/photo/room_II/paintings/painting_kravchenko.jpg, div_paint_kravchenko); "
+          
+    />
+</scene> 
+
+
+<scene name="room2_5" onstart="start_scene(20);">
+    <view hlookat="210" vlookat="0" fovtype="MFOV" fov="90" maxpixelzoom="0.0" fovmin="90" fovmax="90" limitview="lookat" hlookatmin="-360" hlookatmax="360" vlookatmin="0" vlookatmax="0"/>
+    <image>
+      <cube url="%SWFPATH%/sources/Panor/room2/5/room2_5_%s.jpg" />
+    </image>
+	
+	<hotspot name="spotRoom2_5-4" url="%SWFPATH%/sources/hotspot.png"
+          ath="175" atv="10"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+          onclick="loadsceneM(room2_4, -50);"
+    />
+	 
+	<hotspot name="spotRoom2_5-6" url="%SWFPATH%/sources/hotspot.png"
+          ath="-75" atv="10"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+          onclick="loadsceneM(room2_6);"
+    />
+	
+	<!-- ЭКСПОЗИЦИИ: -->
+	<hotspot name="spotExpo_arc1_Room2" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="-15" atv="0"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_II/architect/all_up.jpg);"
+         
+    />
+	   
+	<hotspot name="spotExpo_arc2_Room2" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="-15" atv="15"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_II/architect/all_down.jpg);"
+         
+    />
+	
+	<hotspot name="spotExpo_phis1_Room2" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="-45" atv="15"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_II/phis_vosp/all_down.jpg);"
+         
+    />
+	
+	<hotspot name="spotExpo_phis2_Room2" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="-45" atv="0"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_II/phis_vosp/all_up.jpg);"
+         
+    />
+	
+	<hotspot name="spotExpo_fil1_Room2" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="-65" atv="12"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_II/filolog/all_down.jpg);"
+         
+    />
+	
+	<hotspot name="spotExpo_fil2_Room2" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="-65" atv="0"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_II/filolog/all_up.jpg);"
+         
+    />
+	
+	<hotspot name="spotExpo_urf1_Room2" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="140" atv="15"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_II/urfak/all_down.jpg);"
+         
+    />
+	
+	<hotspot name="spotExpo_urf2_Room2" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="140" atv="0"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_II/urfak/all_up.jpg);"
+         
+    />
+	 
+	<!-- КАРТИНЫ: -->
+	<hotspot name="spotPicture1_Room2_5" url="%SWFPATH%/sources/hotspot_picture.png"
+          ath="50" atv="0"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadPicture(%SWFPATH%/sources/photo/room_II/paintings/painting_christ.jpg, div_paint_christ); "
+          
+    /> 
+	
+</scene> 
+  
+ 
+ <scene name="room2_6" onstart="start_scene(21);">
+    <view hlookat="190" vlookat="0" fovtype="MFOV" fov="90" maxpixelzoom="0.0" fovmin="90" fovmax="90" limitview="lookat" hlookatmin="-360" hlookatmax="360" vlookatmin="0" vlookatmax="0"/>
+    <image>
+      <cube url="%SWFPATH%/sources/Panor/room2/6/room2_6_%s.jpg" />
+    </image>
+	
+	<hotspot name="spotRoom2_6-5" url="%SWFPATH%/sources/hotspot.png"
+          ath="100" atv="10"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+          onclick="loadsceneM(room2_5, -50);"
+    />
+	 
+	<hotspot name="spotRoom2_6-1" url="%SWFPATH%/sources/hotspot.png"
+          ath="-140" atv="10"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+          onclick="loadsceneM(room2_1, -80);"
+    />
+	
+	<!-- ЭКСПОЗИЦИИ: -->
+	<hotspot name="spotExpo_fil1_Room26" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="65" atv="12"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_II/filolog/all_down.jpg);"
+         
+    />
+	
+	<hotspot name="spotExpo_fil2_Room26" url="%SWFPATH%/sources/hotspot_exposition.png"
+          ath="65" atv="0"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadExpos(%SWFPATH%/sources/photo/room_II/filolog/all_up.jpg);"
+         
+    />
+	 
+	<!-- КАРТИНЫ: -->
+	<hotspot name="spotPicture1_Room2_6" url="%SWFPATH%/sources/hotspot_picture.png"
+          ath="-54" atv="12"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadPicture(%SWFPATH%/sources/photo/room_II/paintings/painting_scene.jpg, div_paint_scene); "
+          
+    /> 
+	
+	 <!-- ТЕКСТЫ: -->
+	<hotspot name="spotText1_Room2_6" url="%SWFPATH%/sources/hotspot_picture.png"
+          ath="-104" atv="2"
+          crop="0|0|26|26" onovercrop="0|26|26|26"
+		  onclick = "loadText(div_partners2);"
+          
+    />
+	 
+</scene> 
+
+
+</krpano>

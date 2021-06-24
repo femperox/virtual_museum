@@ -1,0 +1,3910 @@
+<krpano>
+
+<!-- =========================== ХОТПОСТЫ НА ФОТКАХ =========================== -->
+
+
+<!-- ============ Хутор ============ -->
+<layer name = "room1_khytor" type = "container"
+
+ parent="layer[expos]"
+ alpha="0" 
+ scale="0" 
+ width="900"
+ height="700"
+ keep = "true"
+ align="center" 
+ edge="center" 
+ scalechildren = "true"
+ 
+ >
+ 
+    <layer name = "hp_khytor_left"
+        url="%SWFPATH%/sources/hotspot_left.png"
+		crop="0|0|26|26" onovercrop="0|26|26|26"
+		keep="true" 
+		handcursor="false" 
+		x = '-528' 
+		scale="1" 
+		onclick= "changeKhytorPhoto('L');"
+		parent="layer[room1_khytor]"
+    />
+	
+	<layer name = "hp_khytor_right"
+        url="%SWFPATH%/sources/hotspot_right.png"
+		crop="0|0|26|26" onovercrop="0|26|26|26"
+		keep="true" 
+		handcursor="false" 
+
+		x = '500'
+		scale="1" 
+		onclick= "changeKhytorPhoto('R');"
+		parent="layer[room1_khytor]"
+    />
+
+</layer>
+
+
+
+
+<!-- ============ ФПМ верх ============ -->
+<layer name = "room1_fpm_up" type = "container"
+
+ parent="layer[expos]"
+ alpha="0" 
+ scale="0" 
+ width="900"
+ height="700"
+ keep = "true"
+ align="center" 
+ edge="center" 
+ scalechildren = "true"
+ 
+ >
+ 
+ <layer name = "hp_room1_fpm_up_books"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "500" y = "120"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/fpm/books.jpg, div_fpm_Dubinin); "
+		parent="layer[room1_fpm_up]"
+ />
+ 
+ <layer name = "hp_room1_fpm_up_emblem"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "625" y = "310"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/fpm/woodenthing.jpg, div_fpm_emblem); "
+		parent="layer[room1_fpm_up]"
+ />
+ 
+ <layer name = "hp_room1_fpm_up_id"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-100" y = "230"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/fpm/id.jpg, div_fpm_id); "
+		parent="layer[room1_fpm_up]"
+ />
+ 
+  <layer name = "hp_room1_fpm_up_gramota"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-90" y = "280"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/fpm/gramota.jpg, div_fpm_gramota); "
+		parent="layer[room1_fpm_up]"
+ />
+ 
+ <layer name = "hp_room1_fpm_up_diploma"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "310" y = "240"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/fpm/diplona.jpg, div_fpm_diploma); "
+		parent="layer[room1_fpm_up]"
+ />
+ 
+  <layer name = "hp_room1_fpm_up_trophey_toghether"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-380" y = "240"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/fpm/trophey_toghether.jpg, div_fpm_trophey_toghether); "
+		parent="layer[room1_fpm_up]"
+ />
+ 
+ <layer name = "hp_room1_fpm_up_trophey_IV_kurs"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-560" y = "260"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/fpm/trophey_IV_kurs.jpg, div_fpm_trophey_IV_kurs); "
+		parent="layer[room1_fpm_up]"
+ />
+ 
+ <layer name = "hp_room1_fpm_down"
+        url="%SWFPATH%/sources/hotspot_down.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="bottom" 
+		y = "350"
+		scale="1" 
+		onclick="changeExpo('%SWFPATH%/sources/photo/room_I/fpm/all.jpg');"
+		parent="layer[room1_fpm_up]"
+ />
+
+</layer>
+
+
+<!-- ============ ФПМ низ ============ -->
+<layer name = "room1_fpm_down" type = "container"
+
+ parent="layer[expos]"
+ alpha="0" 
+ scale="0" 
+ width="900"
+ height="700"
+ keep = "true"
+ align="center" 
+ edge="center" 
+ scalechildren = "true"
+ >
+ 
+ 
+ <layer name = "hp_room1_fpm_down_books"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-430" y = "40"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/fpm/books2.jpg, div_fpm_books); "
+		parent="layer[room1_fpm_down]"
+ />
+ 
+ 
+ <layer name = "hp_room1_fpm_down_notebook"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-250" y = "120"
+	
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/fpm/slimnotebook2.jpg, div_fpm_slimnote); "
+		parent="layer[room1_fpm_down]"
+ />
+
+  <layer name = "hp_room1_fpm_down_floppy"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-210" y = "265"
+
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/fpm/floppy_disk.jpg, div_test1); "
+		parent="layer[room1_fpm_down]"
+  />
+ 
+   <layer name = "hp_room1_fpm_down_log"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "60" y = "215"
+
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/fpm/logaeith.jpg, div_fpm_log); "
+		parent="layer[room1_fpm_down]"
+  />
+ 
+  <layer name = "hp_room1_fpm_down_machine"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "45" y = "70"
+
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/fpm/machine.jpg, div_fpm_machine); "
+		parent="layer[room1_fpm_down]"
+  />
+  
+  <layer name = "hp_room1_fpm_down_trophey_Cache_2004"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-425" y = "290"
+
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/fpm/trophey_Cache_2004.jpg, div_fpm_trophey_Cache_2004); "
+		parent="layer[room1_fpm_down]"
+  />
+  
+  <layer name = "hp_room1_fpm_down_trophey_CIS_Cache"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "300" y = "70"
+
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/fpm/trophey_CIS_Cache.jpg, div_fpm_trophey_Cache_2004); "
+		parent="layer[room1_fpm_down]"
+  />
+ 
+ <layer name = "hp_room1_fpm_down_medal"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "365" y = "190"
+
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/fpm/medal.jpg, div_fpm_medal); "
+		parent="layer[room1_fpm_down]"
+  />
+ 
+ <layer name = "hp_room1_fpm_down_medal2"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "365" y = "250"
+
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/fpm/medal2.jpg, div_fpm_medal2); "
+		parent="layer[room1_fpm_down]"
+  />
+  
+  <layer name = "hp_room1_fpm_up"
+        url="%SWFPATH%/sources/hotspot_up.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="top" 
+	    y = "-350"
+		scale="1" 
+		onclick="changeExpo('%SWFPATH%/sources/photo/room_I/fpm/all_up.jpg');"
+		parent="layer[room1_fpm_down]"
+ />
+
+</layer>
+
+<!-- ============ Архитекторы+Геологи низ ============ -->
+<layer name = "room2_arc_down" type = "container"
+
+ parent="layer[expos]"
+ alpha="0" 
+ scale="0" 
+ width="900"
+ height="700"
+ keep = "true"
+ align="center" 
+ edge="center" 
+ scalechildren = "true"
+ > 
+  
+  <layer name = "hp_room2_arc_down_rocks1"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-270" y = "250"
+
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_II/architect/geo_rocks1.jpg, div_geo_rocks1); "
+		parent="layer[room2_arc_down]"
+  />
+  
+  <layer name = "hp_room2_arc_down_rocks2"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "270" y = "220"
+
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_II/architect/geo_rocks2.jpg, div_geo_rocks2); "
+		parent="layer[room2_arc_down]"
+  />
+  
+  <layer name = "hp_room2_arc_down_rocks3"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "80" y = "80"
+
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_II/architect/geo_rocks3.jpg, div_geo_rocks3); "
+		parent="layer[room2_arc_down]"
+  />
+  
+  <layer name = "hp_room2_arc_down_rocks4"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-200" y = "80"
+
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_II/architect/geo_rocks4.jpg, div_geo_rocks4); "
+		parent="layer[room2_arc_down]"
+  />
+  
+  <layer name = "hp_room2_arc_down_oil"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "55" y = "270"
+
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_II/architect/geo_oil.jpg, div_geo_oil); "
+		parent="layer[room2_arc_down]"
+  />
+  
+  <layer name = "hp_room2_arc_down_diploma"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-380" y = "0"
+
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_II/architect/geo_gramota.jpg, div_geo_diploma); "
+		parent="layer[room2_arc_down]"
+  />
+
+</layer>
+
+<!-- ============ Архитекторы+Геологи верх ============ -->
+<layer name = "room2_arc_up" type = "container"
+
+ parent="layer[expos]"
+ alpha="0" 
+ scale="0" 
+ width="900"
+ height="700"
+ keep = "true"
+ align="center" 
+ edge="center" 
+ scalechildren = "true"
+ 
+ >
+  
+ <layer name = "hp_room2_arc_up_wood"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-270" y = "110"
+
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_II/architect/arc_wood.jpg, div_arc_wood); "
+		parent="layer[room2_arc_up]"
+  />
+  
+  <layer name = "hp_room2_arc_up_book"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "76" y = "276"
+
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_II/architect/arc_book.jpg, div_arc_book); "
+		parent="layer[room2_arc_up]"
+  />
+  
+  <layer name = "hp_room2_arc_up_books"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "311" y = "266"
+
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_II/architect/arc_books.jpg, div_arc_books); "
+		parent="layer[room2_arc_up]"
+  />
+  
+  <layer name = "hp_room2_arc_up_medals"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-344" y = "276"
+
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_II/architect/arc_medals.jpg, div_arc_medals); "
+		parent="layer[room2_arc_up]"
+  />
+
+</layer>
+
+<!-- ============ Физ+Департамент низ ============ -->
+<layer name = "room2_phis_down" type = "container"
+
+ parent="layer[expos]"
+ alpha="0" 
+ scale="0" 
+ width="900"
+ height="700"
+ keep = "true"
+ align="center" 
+ edge="center" 
+ scalechildren = "true"
+ > 
+    
+  <layer name = "hp_room2_phis_down_knife"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-255" y = "241"
+
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_II/phis_vosp/phi_knife.jpg, div_dep_knife); "
+		parent="layer[room2_phis_down]"
+  />
+  
+  <layer name = "hp_room2_phis_down_kozel"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-341" y = "-45"
+
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_II/phis_vosp/phi_kozel.jpg, div_dep_kozel); "
+		parent="layer[room2_phis_down]"
+  />
+  
+  <layer name = "hp_room2_phis_down_mechet"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-181" y = "131"
+
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_II/phis_vosp/phi_mechet.jpg, div_dep_mechet); "
+		parent="layer[room2_phis_down]"
+  />
+  
+  <layer name = "hp_room2_phis_down_vesi"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-341" y = "241"
+
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_II/phis_vosp/phi_vesi.jpg, div_dep_vesi); "
+		parent="layer[room2_phis_down]"
+  />
+  
+  <layer name = "hp_room2_phis_down_tea_set"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "21" y = "181"
+
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_II/phis_vosp/phi_tea_set.jpg, div_dep_tea_set); "
+		parent="layer[room2_phis_down]"
+  />
+  
+  <layer name = "hp_room2_phis_down_gerb"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "141" y = "81"
+
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_II/phis_vosp/phi_gerb.jpg, div_dep_gerb); "
+		parent="layer[room2_phis_down]"
+  />
+  
+  <layer name = "hp_room2_phis_down_egypt"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "181" y = "151"
+
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_II/phis_vosp/phi_egypt.jpg, div_dep_egypt); "
+		parent="layer[room2_phis_down]"
+  />
+  
+  <layer name = "hp_room2_phis_down_mask"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "313" y = "111"
+
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_II/phis_vosp/phi_mask.jpg, div_dep_mask); "
+		parent="layer[room2_phis_down]"
+  />
+  
+  <layer name = "hp_room2_phis_down_plate"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "411" y = "296"
+
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_II/phis_vosp/phi_plate.jpg, div_dep_plate); "
+		parent="layer[room2_phis_down]"
+  />
+
+</layer>
+
+<!-- ============ Физ+Департамент верх ============ -->
+<layer name = "room2_phis_up" type = "container"
+
+ parent="layer[expos]"
+ alpha="0" 
+ scale="0" 
+ width="900"
+ height="700"
+ keep = "true"
+ align="center" 
+ edge="center" 
+ scalechildren = "true"
+ 
+ >
+ 
+ <layer name = "hp_room2_phis_up_diploma"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-131" y = "111"
+
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_II/phis_vosp/phi_diploma.jpg, div_phi_diploma); "
+		parent="layer[room2_phis_up]"
+  />
+  
+  <layer name = "hp_room2_phis_up_id"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "51" y = "161"
+
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_II/phis_vosp/phi_studak.jpg, div_phi_id); "
+		parent="layer[room2_phis_up]"
+  />
+  
+  <layer name = "hp_room2_phis_up_trophey"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "221" y = "161"
+
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_II/phis_vosp/phi_trophey.jpg, div_phi_trophey); "
+		parent="layer[room2_phis_up]"
+  />
+  
+  <layer name = "hp_room2_phis_up_trophey2"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "481" y = "161"
+
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_II/phis_vosp/phi_trophey2.jpg, div_phi_trophey2); "
+		parent="layer[room2_phis_up]"
+  />
+  
+  <layer name = "hp_room2_phis_up_trophey3"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-461" y = "-51"
+
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_II/phis_vosp/phi_trophey3.jpg, div_phi_trophey3); "
+		parent="layer[room2_phis_up]"
+  />
+  
+  <layer name = "hp_room2_phis_up_medal"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "41" y = "321"
+
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_II/phis_vosp/phi_medal.jpg, div_phi_medal); "
+		parent="layer[room2_phis_up]"
+  />
+  
+  <layer name = "hp_room2_phis_up_medals"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-271" y = "321"
+
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_II/phis_vosp/phi_medals.jpg, div_phi_medals); "
+		parent="layer[room2_phis_up]"
+  />
+  
+  <layer name = "hp_room2_phis_up_medals2"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "301" y = "321"
+
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_II/phis_vosp/phi_medals2.jpg, div_phi_medals2); "
+		parent="layer[room2_phis_up]"
+  />
+
+
+</layer>
+
+<!-- ============ Филфак низ ============ -->
+<layer name = "room2_fil_down" type = "container"
+
+ parent="layer[expos]"
+ alpha="0" 
+ scale="0" 
+ width="900"
+ height="700"
+ keep = "true"
+ align="center" 
+ edge="center" 
+ scalechildren = "true"
+ > 
+	
+	<layer name = "hp_room2_fil_down_stepanov"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-190" y = "50"
+
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_II/filolog/fil_stepanov.jpg, div_fil_stepanov); "
+		parent="layer[room2_fil_down]"
+    />
+  
+  
+    <layer name = "hp_room2_fil_down_books"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-450" y = "0"
+
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_II/filolog/fil_books.jpg, div_fil_books); "
+		parent="layer[room2_fil_down]"
+    />
+  
+    <layer name = "hp_room2_fil_down_books3"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-170" y = "220"
+
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_II/filolog/fil_books3.jpg, div_fil_books3); "
+		parent="layer[room2_fil_down]"
+    />
+	
+	<layer name = "hp_room2_fil_down_machine"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "233" y = "180"
+
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_II/filolog/fil_machine.jpg, div_fil_machine); "
+		parent="layer[room2_fil_down]"
+    />
+	
+	<layer name = "hp_room2_fil_down_poet"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "17" y = "199"
+
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_II/filolog/fil_poet.jpg, div_fil_poet); "
+		parent="layer[room2_fil_down]"
+    />
+  
+  
+</layer>
+
+<!-- ============ Филфак верх ============ -->
+<layer name = "room2_fil_up" type = "container"
+
+ parent="layer[expos]"
+ alpha="0" 
+ scale="0" 
+ width="900"
+ height="700"
+ keep = "true"
+ align="center" 
+ edge="center" 
+ scalechildren = "true"
+ 
+ >
+ 
+ <layer name = "hp_room2_fil_up_books2"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-390" y = "120"
+
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_II/filolog/fil_books2.jpg, div_fil_books2); "
+		parent="layer[room2_fil_up]"
+  />
+  
+  <layer name = "hp_room2_fil_up_medals"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-50" y = "50"
+
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_II/filolog/fil_medals.jpg, div_fil_medal); "
+		parent="layer[room2_fil_up]"
+  />
+  
+  <layer name = "hp_room2_fil_up_items"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "250" y = "150"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_II/filolog/fil_items.jpg, div_fil_items); "
+		parent="layer[room2_fil_up]"
+  />
+  
+  <layer name = "hp_room2_fil_up_id"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "320" y = "310"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_II/filolog/fil_studak.jpg, div_fil_id); "
+		parent="layer[room2_fil_up]"
+  />
+  
+  <layer name = "hp_room2_fil_up_letopis"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "30" y = "300"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_II/filolog/fil_letopis.jpg, div_fil_letopis); "
+		parent="layer[room2_fil_up]"
+  />
+  
+</layer>
+
+<!-- ============ юрфак низ ============ -->
+<layer name = "room2_urf_down" type = "container"
+
+ parent="layer[expos]"
+ alpha="0" 
+ scale="0" 
+ width="900"
+ height="700"
+ keep = "true"
+ align="center" 
+ edge="center" 
+ scalechildren = "true"
+ > 
+	
+	<layer name = "hp_room2_urf_down_set"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "350" y = "215"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_II/urfak/urf_set.jpg, div_urf_set); "
+		parent="layer[room2_urf_down]"
+    />
+	
+	<layer name = "hp_room2_urf_down_set2"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-310" y = "100"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_II/urfak/urf_set2.jpg, div_urf_set2); "
+		parent="layer[room2_urf_down]"
+    />
+	
+	<layer name = "hp_room2_urf_down_diploma"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "570" y = "-190"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_II/urfak/urf_diploma.jpg, div_urf_diploma); "
+		parent="layer[room2_urf_down]"
+    />
+	
+	<layer name = "hp_room2_urf_down_diploma2"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "20" y = "150"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_II/urfak/urf_diploma2.jpg, div_urf_diploma2); "
+		parent="layer[room2_urf_down]"
+    />
+	
+	<layer name = "hp_room2_urf_down_trophey"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "260" y = "80"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_II/urfak/urf_trophey.jpg, div_urf_trophey); "
+		parent="layer[room2_urf_down]"
+    />
+  
+  
+</layer>
+
+<!-- ============ юрфак верх ============ -->
+<layer name = "room2_urf_up" type = "container"
+
+ parent="layer[expos]"
+ alpha="0" 
+ scale="0" 
+ width="900"
+ height="700"
+ keep = "true"
+ align="center" 
+ edge="center" 
+ scalechildren = "true"
+ 
+ >
+ 
+ <layer name = "hp_room2_urf_up_diploma3"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "560" y = "-16"
+
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_II/urfak/urf_diploma3.jpg, div_urf_diploma3); "
+		parent="layer[room2_urf_up]"
+  />
+ 
+ <layer name = "hp_room2_urf_up_diploma4"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-540" y = "-50"
+
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_II/urfak/urf_diploma4.jpg, div_urf_diploma4); "
+		parent="layer[room2_urf_up]"
+  />
+  
+  <layer name = "hp_room2_urf_up_trophey2"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-130" y = "0"
+
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_II/urfak/urf_trophey2.jpg, div_urf_trophey2); "
+		parent="layer[room2_urf_up]"
+  />
+  
+  <layer name = "hp_room2_urf_up_set3"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-20" y = "240"
+
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_II/urfak/urf_set3.jpg, div_urf_set3); "
+		parent="layer[room2_urf_up]"
+  />
+  
+   <layer name = "hp_room2_urf_up_scientist"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "350" y = "-10"
+
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_II/urfak/urf_scientist.jpg, div_urf_scientist); "
+		parent="layer[room2_urf_up]"
+  />
+  
+  <layer name = "hp_room2_urf_up_book"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "350" y = "320"
+
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_II/urfak/urf_book.jpg, div_urf_book); "
+		parent="layer[room2_urf_up]"
+  />
+</layer>
+
+<!-- ============ журфак низ ============ -->
+<layer name = "room2_jour_down" type = "container"
+
+ parent="layer[expos]"
+ alpha="0" 
+ scale="0" 
+ width="900"
+ height="700"
+ keep = "true"
+ align="center" 
+ edge="center" 
+ scalechildren = "true"
+ > 
+	
+	<layer name = "hp_room2_jour_down_diploma"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "20" y = "270"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_II/journal/jor_diploma.jpg, div_jour_diploma); "
+		parent="layer[room2_jour_down]"
+    />
+	
+	<layer name = "hp_room2_jour_down_diploma2"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-650" y = "-100"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_II/journal/jor_diploma2.jpg, div_jour_diploma2); "
+		parent="layer[room2_jour_down]"
+    />
+	
+	<layer name = "hp_room2_jour_down_apple"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "17" y = "90"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_II/journal/jor_apple.jpg, div_jour_apple); "
+		parent="layer[room2_jour_down]"
+    />
+	
+	<layer name = "hp_room2_jour_down_trophey"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "310" y = "140"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_II/journal/jor_trophey.jpg, div_jour_trophey); "
+		parent="layer[room2_jour_down]"
+    />
+	
+	<layer name = "hp_room2_jour_down_trophey2"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-240" y = "-100"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_II/journal/jor_trophey2.jpg, div_jour_trophey2); "
+		parent="layer[room2_jour_down]"
+    />
+	
+	<layer name = "hp_room2_jour_down_books"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "630" y = "-130"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_II/journal/jor_books.jpg, div_jour_books); "
+		parent="layer[room2_jour_down]"
+    />
+	
+	
+  
+</layer>
+
+<!-- ============ журфак верх ============ -->
+<layer name = "room2_jour_up" type = "container"
+
+ parent="layer[expos]"
+ alpha="0" 
+ scale="0" 
+ width="900"
+ height="700"
+ keep = "true"
+ align="center" 
+ edge="center" 
+ scalechildren = "true"
+ 
+ >
+ 
+ <layer name = "hp_room2_jour_up_diploma3"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "550" y = "-110"
+
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_II/journal/jor_diploma3.jpg, div_jour_diploma3); "
+		parent="layer[room2_jour_up]"
+  />
+  
+  <layer name = "hp_room2_jour_up_book"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-550" y = "-20"
+
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_II/journal/jor_book.jpg, div_jour_book); "
+		parent="layer[room2_jour_up]"
+  />
+  
+   <layer name = "hp_room2_jour_up_books2"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "250" y = "210"
+
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_II/journal/jor_books2.jpg, div_jour_books2); "
+		parent="layer[room2_jour_up]"
+  />
+  
+  <layer name = "hp_room2_jour_up_camera"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-30" y = "125"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_II/journal/jor_camera.jpg, div_jour_camera); "
+		parent="layer[room2_jour_up]"
+  />
+  
+  <layer name = "hp_room2_jour_up_camera2"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-350" y = "-20"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_II/journal/jor_camera2.jpg, div_jour_camera2); "
+		parent="layer[room2_jour_up]"
+  />
+  
+  <layer name = "hp_room2_jour_up_pen"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-210" y = "160"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_II/journal/jor_pen.jpg, div_jour_pen); "
+		parent="layer[room2_jour_up]"
+  />
+
+</layer>
+
+
+<!-- ============ Химия верх ============ -->
+<layer name = "room1_chem_up" type = "container"
+
+ parent="layer[expos]"
+ alpha="0" 
+ scale="0" 
+ width="900"
+ height="700"
+ keep = "true"
+ align="center" 
+ edge="center" 
+ scalechildren = "true"
+ 
+ >
+
+ <layer name = "hp_room1_chem_up_medali"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-45" y = "100"
+
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/chem/chem_medali.jpg, div_chem_medali); "
+		parent="layer[room1_chem_up]"
+  />
+ 
+  <layer name = "hp_room1_chem_up_diplom_i_medal"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-400" y = "230"
+
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/chem/chem_diplom_i_medal.jpg, div_chem_diplom_i_medal); "
+		parent="layer[room1_chem_up]"
+  />
+
+  <layer name = "hp_room1_chem_up_udostoverenie"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-380" y = "80"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/chem/chem_udostoverenie.jpg, div_chem_udostoverenie); "
+		parent="layer[room1_chem_up]"
+  />
+
+  <layer name = "hp_room1_chem_up_gorn"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-45" y = "190"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/chem/chem_gorn.jpg, div_chem_gorn); "
+		parent="layer[room1_chem_up]"
+  />
+ 
+  <layer name = "hp_room1_chem_up_diplomas"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-45" y = "270"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/chem/chem_diplomas.jpg, div_chem_diplomas); "
+		parent="layer[room1_chem_up]"
+  />
+
+  <layer name = "hp_room1_chem_up_shapka"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "345" y = "65"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/chem/chem_shapka.jpg, div_chem_shapka); "
+		parent="layer[room1_chem_up]"
+  />  
+
+  <layer name = "hp_room1_chem_up_diplom"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "345" y = "240"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/chem/chem_diplom.jpg, div_chem_diplom); "
+		parent="layer[room1_chem_up]"
+  />    
+</layer>
+
+<!-- ============ Химия них ============ -->
+<layer name = "room1_chem_down" type = "container"
+
+ parent="layer[expos]"
+ alpha="0" 
+ scale="0" 
+ width="900"
+ height="700"
+ keep = "true"
+ align="center" 
+ edge="center" 
+ scalechildren = "true"
+ 
+ >
+ 
+ <layer name = "hp_room1_chem_down_pribor"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-450" y = "240"
+
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/chem/chem_pribor.jpg, div_chem_pribor); "
+		parent="layer[room1_chem_down]"
+  />
+  
+  <layer name = "hp_room1_chem_down_plastina"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-280" y = "230"
+
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/chem/chem_plastina.jpg, div_chem_plastina); "
+		parent="layer[room1_chem_down]"
+  />
+
+  <layer name = "hp_room1_chem_down_stekla"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "100" y = "280"
+
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/chem/chem_stekla.jpg, div_chem_stekla); "
+		parent="layer[room1_chem_down]"
+  />
+  
+  <layer name = "hp_room1_chem_down_analizator"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "162" y = "95"
+
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/chem/chem_analizator.jpg, div_chem_analizator); "
+		parent="layer[room1_chem_down]"
+  />
+
+  <layer name = "hp_room1_chem_down_knigi"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "355" y = "-50"
+
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/chem/chem_knigi.jpg, div_chem_knigi); "
+		parent="layer[room1_chem_down]"
+  />
+
+  <layer name = "hp_room1_chem_down_vaza"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-65" y = "95"
+
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/chem/chem_vaza.jpg, div_chem_vaza); "
+		parent="layer[room1_chem_down]"
+  />
+ 
+  <layer name = "hp_room1_chem_down_ramka"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-255" y = "145"
+
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/chem/chem_ramka.jpg, div_chem_ramka); "
+		parent="layer[room1_chem_down]"
+  />
+  
+  <layer name = "hp_room1_chem_down_himia"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-320" y = "-80"
+
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/chem/chem_himia.jpg, div_chem_himia); "
+		parent="layer[room1_chem_down]"
+  />
+</layer>
+
+<!-- ============ Филиалы верх ============ -->
+<layer name = "room1_filials_up" type = "container"
+
+ parent="layer[expos]"
+ alpha="0" 
+ scale="0" 
+ width="900"
+ height="700"
+ keep = "true"
+ align="center" 
+ edge="center" 
+ scalechildren = "true"
+ 
+ >
+
+ <layer name = "hp_room1_filials_up_nagradi2"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-400" y = "-30"
+
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/filials/filials_nagradi2.jpg, div_filials_nagradi2); "
+		parent="layer[room1_filials_up]"
+  />
+
+  <layer name = "hp_room1_filials_up_laureat"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-95" y = "300"
+
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/filials/filials_laureat.jpg, div_filials_laureat); "
+		parent="layer[room1_filials_up]"
+  />
+
+  <layer name = "hp_room1_filials_up_moneta"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "130" y = "230"
+
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/filials/filials_moneta.jpg, div_filials_moneta); "
+		parent="layer[room1_filials_up]"
+  />
+
+  <layer name = "hp_room1_filials_up_kubki"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "450" y = "-100"
+
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/filials/filials_kubki.jpg, div_filials_kubki); "
+		parent="layer[room1_filials_up]"
+  />
+</layer>
+
+<!-- ============ Филиалы низ ============ -->
+<layer name = "room1_filials_down" type = "container"
+
+ parent="layer[expos]"
+ alpha="0" 
+ scale="0" 
+ width="900"
+ height="700"
+ keep = "true"
+ align="center" 
+ edge="center" 
+ scalechildren = "true"
+ 
+ >
+
+ <layer name = "hp_room1_filials_down_diplom"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-150" y = "330"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/filials/filials_diplom.jpg, div_filials_diplom); "
+		parent="layer[room1_filials_down]"
+  />
+
+  <layer name = "hp_room1_filials_down_nagradi"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-290" y = "170"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/filials/filials_nagradi.jpg, div_filials_nagradi); "
+		parent="layer[room1_filials_down]"
+  />  
+ 
+  <layer name = "hp_room1_filials_down_nagrada2"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "190" y = "250"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/filials/filials_nagrada2.jpg, div_filials_nagrada2); "
+		parent="layer[room1_filials_down]"
+  />  
+
+  <layer name = "hp_room1_filials_down_kubki2"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "330" y = "145"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/filials/filials_kubki2.jpg, div_filials_kubki2); "
+		parent="layer[room1_filials_down]"
+  />      
+</layer>
+
+<!-- ============ Географический верх ============ -->
+<layer name = "room1_geogr_up" type = "container"
+
+ parent="layer[expos]"
+ alpha="0" 
+ scale="0" 
+ width="900"
+ height="700"
+ keep = "true"
+ align="center" 
+ edge="center" 
+ scalechildren = "true"
+ 
+ >
+
+  <layer name = "hp_room1_geogr_up_photos"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-500" y = "40"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/geogr/geogr_photos.jpg, div_geogr_photos); "
+		parent="layer[room1_geogr_up]"
+  /> 
+
+  <layer name = "hp_room1_geogr_up_kompas"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-300" y = "250"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/geogr/geogr_kompas.jpg, div_geogr_kompas); "
+		parent="layer[room1_geogr_up]"
+  />   
+
+  <layer name = "hp_room1_geogr_up_izdanie1"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "0" y = "280"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/geogr/geogr_izdanie1.jpg, div_geogr_izdanie1); "
+		parent="layer[room1_geogr_up]"
+  />  
+
+  <layer name = "hp_room1_geogr_up_kamni1"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "485" y = "280"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/geogr/geogr_kamni1.jpg, div_geogr_kamni1); "
+		parent="layer[room1_geogr_up]"
+  />  
+
+  <layer name = "hp_room1_geogr_up_kompas1"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "429" y = "310"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/geogr/geogr_kompas1.jpg, div_geogr_kompas1); "
+		parent="layer[room1_geogr_up]"
+  />    
+
+  <layer name = "hp_room1_geogr_up_ruchka"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "610" y = "330"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/geogr/geogr_ruchka.jpg, div_geogr_ruchka); "
+		parent="layer[room1_geogr_up]"
+  />   
+
+  <layer name = "hp_room1_geogr_up_nagrada"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "435" y = "35"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/geogr/geogr_nagrada.jpg, div_geogr_nagrada); "
+		parent="layer[room1_geogr_up]"
+  />   
+  
+  <layer name = "hp_room1_geogr_up_id"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "80" y = "150"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/geogr/geogr_id.jpg, div_geogr_id); "
+		parent="layer[room1_geogr_up]"
+  />   
+  
+</layer>
+
+<!-- ============ Географический низ ============ -->
+<layer name = "room1_geogr_down" type = "container"
+
+ parent="layer[expos]"
+ alpha="0" 
+ scale="0" 
+ width="900"
+ height="700"
+ keep = "true"
+ align="center" 
+ edge="center" 
+ scalechildren = "true"
+ 
+ >
+
+ <layer name = "hp_room1_geogr_down_apparat"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-395" y = "270"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/geogr/geogr_apparat.jpg, div_geogr_apparat); "
+		parent="layer[room1_geogr_down]"
+  />
+
+ <layer name = "hp_room1_geogr_down_globus1"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-360" y = "-100"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/geogr/geogr_globus1.jpg, div_geogr_globus1); "
+		parent="layer[room1_geogr_down]"
+  />  
+
+  <layer name = "hp_room1_geogr_down_lineika"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-55" y = "140"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/geogr/geogr_lineika.jpg, div_geogr_lineika); "
+		parent="layer[room1_geogr_down]"
+  />  
+
+  <layer name = "hp_room1_geogr_down_chto1"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "95" y = "320"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/geogr/geogr_chto1.jpg, div_geogr_chto1); "
+		parent="layer[room1_geogr_down]"
+  />    
+  
+  <layer name = "hp_room1_geogr_down_chto"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "240" y = "300"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/geogr/geogr_chto.jpg, div_geogr_chto); "
+		parent="layer[room1_geogr_down]"
+  />    
+
+  <layer name = "hp_room1_geogr_down_cirkul"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "155" y = "180"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/geogr/geogr_cirkul.jpg, div_geogr_cirkul); "
+		parent="layer[room1_geogr_down]"
+  />   
+
+  <layer name = "hp_room1_geogr_down_books"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "400" y = "-80"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/geogr/geogr_books.jpg, div_geogr_books); "
+		parent="layer[room1_geogr_down]"
+  />   
+
+  <layer name = "hp_room1_geogr_down_diplom"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "95" y = "-30"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/geogr/geogr_diplom.jpg, div_geogr_diplom); "
+		parent="layer[room1_geogr_down]"
+  />    
+</layer>
+
+<!-- ============ Эконом верх ============ -->
+<layer name = "room1_econom_up" type = "container"
+
+ parent="layer[expos]"
+ alpha="0" 
+ scale="0" 
+ width="900"
+ height="700"
+ keep = "true"
+ align="center" 
+ edge="center" 
+ scalechildren = "true"
+ 
+ >
+
+  <layer name = "hp_room1_econom_up_bilet"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "60" y = "130"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/econom/econom_bilet.jpg, div_econom_bilet); "
+		parent="layer[room1_econom_up]"
+  /> 
+
+  <layer name = "hp_room1_econom_up_kuboks"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-500" y = "65"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/econom/econom_kuboks.jpg, div_econom_kuboks); "
+		parent="layer[room1_econom_up]"
+  /> 
+ 
+  <layer name = "hp_room1_econom_up_planeta"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-350" y = "-120"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/econom/econom_planeta.jpg, div_econom_planeta); "
+		parent="layer[room1_econom_up]"
+  /> 
+
+  <layer name = "hp_room1_econom_up_kniga"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-230" y = "150"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/econom/econom_kniga.jpg, div_econom_kniga); "
+		parent="layer[room1_econom_up]"
+  /> 
+
+  <layer name = "hp_room1_econom_up_foto2"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "270" y = "150"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/econom/econom_foto2.jpg, div_econom_foto2); "
+		parent="layer[room1_econom_up]"
+  /> 
+ 
+  <layer name = "hp_room1_econom_up_jurnal"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "270" y = "250"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/econom/econom_jurnal.jpg, div_econom_jurnal); "
+		parent="layer[room1_econom_up]"
+  /> 
+
+  <layer name = "hp_room1_econom_up_medali2"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "485" y = "10"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/econom/econom_medali2.jpg, div_econom_medali2); "
+		parent="layer[room1_econom_up]"
+  /> 
+  
+</layer>
+
+<!-- ============ Эконом низ ============ -->
+<layer name = "room1_econom_down" type = "container"
+
+ parent="layer[expos]"
+ alpha="0" 
+ scale="0" 
+ width="900"
+ height="700"
+ keep = "true"
+ align="center" 
+ edge="center" 
+ scalechildren = "true"
+ 
+ >
+
+ <layer name = "hp_room1_econom_down_teoria"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-240" y = "300"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/econom/econom_teoria.jpg, div_econom_teoria); "
+		parent="layer[room1_econom_down]"
+  />
+
+  <layer name = "hp_room1_econom_down_traktat"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-560" y = "-100"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/econom/econom_traktat.jpg, div_econom_traktat); "
+		parent="layer[room1_econom_down]"
+  /> 
+
+  <layer name = "hp_room1_econom_down_kubok2"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-440" y = "-250"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/econom/econom_kubok2.jpg, div_econom_kubok2); "
+		parent="layer[room1_econom_down]"
+  /> 
+
+  <layer name = "hp_room1_econom_down_medali"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "120" y = "270"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/econom/econom_medali.jpg, div_econom_medali); "
+		parent="layer[room1_econom_down]"
+  />   
+
+  <layer name = "hp_room1_econom_down_foto"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "400" y = "240"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/econom/econom_foto.jpg, div_econom_foto); "
+		parent="layer[room1_econom_down]"
+  />   
+
+  <layer name = "hp_room1_econom_down_kubok"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "280" y = "-230"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/econom/econom_kubok.jpg, div_econom_kubok); "
+		parent="layer[room1_econom_down]"
+  />
+
+  <layer name = "hp_room1_econom_down_diplom"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "0" y = "100"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/econom/econom_diplom.jpg, div_econom_diplom); "
+		parent="layer[room1_econom_down]"
+  />   
+  
+</layer>
+
+<!-- ============ Биологический верх ============ -->
+<layer name = "room1_bio_up" type = "container"
+
+ parent="layer[expos]"
+ alpha="0" 
+ scale="0" 
+ width="900"
+ height="700"
+ keep = "true"
+ align="center" 
+ edge="center" 
+ scalechildren = "true"
+ 
+ >
+
+  <layer name = "hp_room1_bio_up_banochki"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-90" y = "200"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/bio/bio_banochki.jpg, div_bio_banochki); "
+		parent="layer[room1_bio_up]"
+  /> 
+
+  <layer name = "hp_room1_bio_up_moneti"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-155" y = "100"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/bio/bio_moneti.jpg, div_bio_moneti); "
+		parent="layer[room1_bio_up]"
+  /> 
+
+  <layer name = "hp_room1_bio_up_diplom"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-500" y = "290"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/bio/bio_diplom.jpg, div_bio_diplom); "
+		parent="layer[room1_bio_up]"
+  />   
+
+  <layer name = "hp_room1_bio_up_istoria"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-450" y = "140"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/bio/bio_istoria.jpg, div_bio_istoria); "
+		parent="layer[room1_bio_up]"
+  />    
+
+  <layer name = "hp_room1_bio_up_gramota"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "30" y = "-80"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/bio/bio_gramota.jpg, div_bio_gramota); "
+		parent="layer[room1_bio_up]"
+  />  
+   
+  <layer name = "hp_room1_bio_up_lekarstva"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "240" y = "70"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/bio/bio_lekarstva.jpg, div_bio_lekarstva); "
+		parent="layer[room1_bio_up]"
+  />  
+
+  <layer name = "hp_room1_bio_up_diploma"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "350" y = "-70"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/bio/bio_diploma.jpg, div_bio_diploma); "
+		parent="layer[room1_bio_up]"
+  /> 
+  
+  <layer name = "hp_room1_bio_up_moneta"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "550" y = "300"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/bio/bio_moneta.jpg, div_bio_moneta); "
+		parent="layer[room1_bio_up]"
+  /> 
+  
+</layer>
+
+
+<!-- ============ Биологический низ ============ -->
+<layer name = "room1_bio_down" type = "container"
+
+ parent="layer[expos]"
+ alpha="0" 
+ scale="0" 
+ width="900"
+ height="700"
+ keep = "true"
+ align="center" 
+ edge="center" 
+ scalechildren = "true"
+ 
+ >
+
+ <layer name = "hp_room1_bio_down_mikroskop1"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-235" y = "238"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/bio/bio_mikroskop1.jpg, div_bio_mikroskop1); "
+		parent="layer[room1_bio_down]"
+  />
+  
+ <layer name = "hp_room1_bio_down_mikroskop2"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "308" y = "220"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/bio/bio_mikroskop2.jpg, div_bio_mikroskop2); "
+		parent="layer[room1_bio_down]"
+  />
+
+  <layer name = "hp_room1_bio_down_mikroskop3"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "387" y = "287"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/bio/bio_mikroskop3.jpg, div_bio_mikroskop3); "
+		parent="layer[room1_bio_down]"
+  /> 
+
+  <layer name = "hp_room1_bio_down_sumka"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "0" y = "180"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/bio/bio_sumka.jpg, div_bio_sumka); "
+		parent="layer[room1_bio_down]"
+  /> 
+
+  <layer name = "hp_room1_bio_down_kniga"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-365" y = "270"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/bio/bio_kniga.jpg, div_bio_kniga); "
+		parent="layer[room1_bio_down]"
+  /> 
+
+  <layer name = "hp_room1_bio_down_blagodarnost"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-470" y = "-100"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/bio/bio_blagodarnost.jpg, div_bio_blagodarnost); "
+		parent="layer[room1_bio_down]"
+  /> 
+
+  <layer name = "hp_room1_bio_down_eksponat"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "320" y = "-270"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/bio/bio_eksponat.jpg, div_bio_eksponat); "
+		parent="layer[room1_bio_down]"
+  />   
+</layer>
+
+<!-- ============ Физтех верх ============ -->
+<layer name = "room1_phis_teh_up" type = "container"
+
+ parent="layer[expos]"
+ alpha="0" 
+ scale="0" 
+ width="900"
+ height="700"
+ keep = "true"
+ align="center" 
+ edge="center" 
+ scalechildren = "true"
+ 
+ >
+
+  <layer name = "hp_room1_phis_teh_up_medali"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "0" y = "130"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/phis_teh/phis_teh_medali.jpg, div_phis_teh_medali); "
+		parent="layer[room1_phis_teh_up]"
+  /> 
+
+  <layer name = "hp_room1_phis_teh_up_svidetelstvo"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "0" y = "250"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/phis_teh/phis_teh_svidetelstvo.jpg, div_phis_teh_svidetelstvo); "
+		parent="layer[room1_phis_teh_up]"
+  /> 
+  
+  <layer name = "hp_room1_phis_teh_up_diplom"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-390" y = "-140"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/phis_teh/phis_teh_diplom.jpg, div_phis_teh_diplom); "
+		parent="layer[room1_phis_teh_up]"
+  />
+
+  <layer name = "hp_room1_phis_teh_up_diplom1"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "450" y = "-140"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/phis_teh/phis_teh_diplom1.jpg, div_phis_teh_diplom1); "
+		parent="layer[room1_phis_teh_up]"
+  />  
+</layer>
+
+
+<!-- ============ Физтех низ ============ -->
+<layer name = "room1_phis_teh_down" type = "container"
+
+ parent="layer[expos]"
+ alpha="0" 
+ scale="0" 
+ width="900"
+ height="700"
+ keep = "true"
+ align="center" 
+ edge="center" 
+ scalechildren = "true"
+ 
+ >
+
+ <layer name = "hp_room1_phis_teh_down_mikroskop1"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-300" y = "315"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/phis_teh/phis_teh_steklo.jpg, div_phis_teh_steklo); "
+		parent="layer[room1_phis_teh_down]"
+  />
+
+ <layer name = "hp_room1_phis_teh_down_kniga"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-550" y = "-12"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/phis_teh/phis_teh_kniga.jpg, div_phis_teh_kniga); "
+		parent="layer[room1_phis_teh_down]"
+  />
+
+ <layer name = "hp_room1_phis_teh_down_istoria"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-380" y = "-100"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/phis_teh/phis_teh_istoria.jpg, div_phis_teh_istoria); "
+		parent="layer[room1_phis_teh_down]"
+  />  
+  
+ <layer name = "hp_room1_phis_teh_down_plastina"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-100" y = "110"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/phis_teh/phis_teh_plastina.jpg, div_phis_teh_plastina); "
+		parent="layer[room1_phis_teh_down]"
+  />    
+
+   <layer name = "hp_room1_phis_teh_down_kamni"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "340" y = "270"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/phis_teh/phis_teh_kamni.jpg, div_phis_teh_kamni); "
+		parent="layer[room1_phis_teh_down]"
+  />    
+
+  <layer name = "hp_room1_phis_teh_down_kniga1"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "340" y = "-110"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/phis_teh/phis_teh_kniga1.jpg, div_phis_teh_kniga1); "
+		parent="layer[room1_phis_teh_down]"
+  />   
+
+  <layer name = "hp_room1_phis_teh_down_knigi"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "500" y = "0"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/phis_teh/phis_teh_knigi.jpg, div_phis_teh_knigi); "
+		parent="layer[room1_phis_teh_down]"
+  />     
+</layer>
+
+<!-- ============ Ленин ============ -->
+<layer name = "room1_lenin" type = "container"
+
+ parent="layer[expos]"
+ alpha="0" 
+ scale="0" 
+ width="900"
+ height="700"
+ keep = "true"
+ align="center" 
+ edge="center" 
+ scalechildren = "true"
+ 
+ >
+
+ <layer name = "hp_room1_lenin_diploma2"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "60" y = "300"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/lenin/len_diploma2.jpg, div_lenin_diploma2); "
+		parent="layer[room1_lenin]"
+  />
+
+ <layer name = "hp_room1_lenin_list"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-340" y = "70"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/lenin/len_list.jpg, div_lenin_list); "
+		parent="layer[room1_lenin]"
+  />
+
+  <layer name = "hp_room1_lenin_book"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-300" y = "-60"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/lenin/len_book.jpg, div_lenin_book); "
+		parent="layer[room1_lenin]"
+  /> 
+
+ <layer name = "hp_room1_lenin_diploma"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-65" y = "-27"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/lenin/len_diploma.jpg, div_lenin_diploma); "
+		parent="layer[room1_lenin]"
+  />  
+
+ <layer name = "hp_room1_lenin_bust"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "140" y = "-60"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/lenin/len_bust.jpg, div_lenin_bust); "
+		parent="layer[room1_lenin]"
+  /> 
+
+ <layer name = "hp_room1_lenin_books"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "290" y = "-130"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/lenin/len_books.jpg, div_lenin_books); "
+		parent="layer[room1_lenin]"
+  />   
+</layer>
+
+<!-- ============ ФУП верх ============ -->
+<layer name = "room1_fyp_up" type = "container"
+
+ parent="layer[expos]"
+ alpha="0" 
+ scale="0" 
+ width="900"
+ height="700"
+ keep = "true"
+ align="center" 
+ edge="center" 
+ scalechildren = "true"
+ 
+ >
+
+  <layer name = "hp_room1_fyp_up_nagrada"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-550" y = "-130"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/fyp/fyp_nagrada.jpg, div_fyp_nagrada); "
+		parent="layer[room1_fyp_up]"
+  /> 
+
+  <layer name = "hp_room1_fyp_up_diplom"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-290" y = "128"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/fyp/fyp_diplom.jpg, div_fyp_diplom); "
+		parent="layer[room1_fyp_up]"
+  /> 
+
+  <layer name = "hp_room1_fyp_up_jurnali"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "190" y = "180"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/fyp/fyp_jurnali.jpg, div_fyp_jurnali); "
+		parent="layer[room1_fyp_up]"
+  /> 
+
+  <layer name = "hp_room1_fyp_up_medal"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-80" y = "120"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/fyp/fyp_medal.jpg, div_fyp_medal); "
+		parent="layer[room1_fyp_up]"
+  /> 
+  
+  <layer name = "hp_room1_fyp_up_kubok"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "530" y = "-130"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/fyp/fyp_kubok.jpg, div_fyp_kubok); "
+		parent="layer[room1_fyp_up]"
+  />  
+</layer>
+
+
+<!-- ============ ФУП низ ============ -->
+<layer name = "room1_fyp_down" type = "container"
+
+ parent="layer[expos]"
+ alpha="0" 
+ scale="0" 
+ width="900"
+ height="700"
+ keep = "true"
+ align="center" 
+ edge="center" 
+ scalechildren = "true"
+ 
+ >
+
+ <layer name = "hp_room1_fyp_down_mashinka"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-400" y = "260"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/fyp/fyp_mashinka.jpg, div_fyp_mashinka); "
+		parent="layer[room1_fyp_down]"
+  />
+ 
+  <layer name = "hp_room1_fyp_down_nabor2"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "180" y = "150"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/fyp/fyp_nabor2.jpg, div_fyp_nabor2); "
+		parent="layer[room1_fyp_down]"
+  />  
+
+  <layer name = "hp_room1_fyp_down_kubok1"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "370" y = "-240"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/fyp/fyp_kubok1.jpg, div_fyp_kubok1); "
+		parent="layer[room1_fyp_down]"
+  />  
+
+  <layer name = "hp_room1_fyp_down_gazeta"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "530" y = "-60"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/fyp/fyp_gazeta.jpg, div_fyp_gazeta); "
+		parent="layer[room1_fyp_down]"
+  />    
+</layer>
+
+<!-- ============ Худграф ============ -->
+<layer name = "room1_art" type = "container"
+
+ parent="layer[expos]"
+ alpha="0" 
+ scale="0" 
+ width="900"
+ height="700"
+ keep = "true"
+ align="center" 
+ edge="center" 
+ scalechildren = "true"
+ 
+ >
+
+ <layer name = "hp_room1_art_jor"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-30" y = "150"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/art/art_jor.jpg, div_art_jor); "
+		parent="layer[room1_art]"
+  />
+
+  <layer name = "hp_room1_art_art"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-515" y = "309"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/art/art_art.jpg, div_art_art); "
+		parent="layer[room1_art]"
+  />
+
+  <layer name = "hp_room1_art_item"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "400" y = "250"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/art/art_item.jpg, div_art_item); "
+		parent="layer[room1_art]"
+  />
+  
+  <layer name = "hp_room1_art_jor2"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "250" y = "20"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/art/art_jor2.jpg, div_art_jor2); "
+		parent="layer[room1_art]"
+  />
+
+  <layer name = "hp_room1_art_vase"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-35" y = "-50"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/art/art_vase.jpg, div_art_vase); "
+		parent="layer[room1_art]"
+  />  
+  
+  <layer name = "hp_room1_art_paint"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-300" y = "-50"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/art/art_paint.jpg, div_art_paint); "
+		parent="layer[room1_art]"
+  />  
+  
+</layer>
+
+<!-- ============ История, социология верх ============ -->
+<layer name = "room1_his_up" type = "container"
+
+ parent="layer[expos]"
+ alpha="0" 
+ scale="0" 
+ width="900"
+ height="700"
+ keep = "true"
+ align="center" 
+ edge="center" 
+ scalechildren = "true"
+ 
+ >
+
+  <layer name = "hp_room1_his_up_kniga"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-270" y = "180"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/his/his_kniga.jpg, div_his_kniga); "
+		parent="layer[room1_his_up]"
+  /> 
+  
+  <layer name = "hp_room1_his_up_pismo"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-150" y = "250"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/his/his_pismo.jpg, div_his_pismo); "
+		parent="layer[room1_his_up]"
+  /> 
+
+  <layer name = "hp_room1_his_up_medal"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "200" y = "290"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/his/his_medal.jpg, div_his_medal); "
+		parent="layer[room1_his_up]"
+  />   
+
+  <layer name = "hp_room1_his_up_medali"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "360" y = "230"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/his/his_medali.jpg, div_his_medali); "
+		parent="layer[room1_his_up]"
+  />  
+
+  <layer name = "hp_room1_his_up_diplom"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "145" y = "140"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/his/his_diplom.jpg, div_his_diplom); "
+		parent="layer[room1_his_up]"
+  />  
+
+  <layer name = "hp_room1_his_up_atlas"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "370" y = "90"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/his/his_atlas.jpg, div_his_atlas); "
+		parent="layer[room1_his_up]"
+  />    
+</layer>
+
+
+<!-- ============ История, социология низ ============ -->
+<layer name = "room1_his_down" type = "container"
+
+ parent="layer[expos]"
+ alpha="0" 
+ scale="0" 
+ width="900"
+ height="700"
+ keep = "true"
+ align="center" 
+ edge="center" 
+ scalechildren = "true"
+ 
+ >
+
+ <layer name = "hp_room1_his_down_shapka"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-330" y = "180"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/his/his_shapka.jpg, div_his_shapka); "
+		parent="layer[room1_his_down]"
+  />  
+
+ <layer name = "hp_room1_his_down_nagradi"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "200" y = "70"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/his/his_nagradi.jpg, div_his_nagradi); "
+		parent="layer[room1_his_down]"
+  />  
+
+ <layer name = "hp_room1_his_down_istoria"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "370" y = "170"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/his/his_istoria.jpg, div_his_istoria); "
+		parent="layer[room1_his_down]"
+  />    
+
+ <layer name = "hp_room1_his_down_kubok"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "395" y = "-245"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/his/his_kubok.jpg, div_his_kubok); "
+		parent="layer[room1_his_down]"
+  />  
+</layer>
+
+<!-- ============ РГФ верх ============ -->
+<layer name = "room1_rgf_up" type = "container"
+
+ parent="layer[expos]"
+ alpha="0" 
+ scale="0" 
+ width="900"
+ height="700"
+ keep = "true"
+ align="center" 
+ edge="center" 
+ scalechildren = "true"
+ 
+ >
+
+  <layer name = "hp_room1_rgf_up_plates"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-260" y = "290"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/rgf/rgf_plates.jpg, div_rgf_plates); "
+		parent="layer[room1_rgf_up]"
+  /> 
+
+  <layer name = "hp_room1_rgf_up_items"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "280" y = "170"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/rgf/rgf_items.jpg, div_rgf_items); "
+		parent="layer[room1_rgf_up]"
+  /> 
+
+  <layer name = "hp_room1_rgf_up_prize"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-100" y = "50"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/rgf/rgf_prize.jpg, div_rgf_prize); "
+		parent="layer[room1_rgf_up]"
+  />     
+</layer>
+
+
+<!-- ============ РГФ низ ============ -->
+<layer name = "room1_rgf_down" type = "container"
+
+ parent="layer[expos]"
+ alpha="0" 
+ scale="0" 
+ width="900"
+ height="700"
+ keep = "true"
+ align="center" 
+ edge="center" 
+ scalechildren = "true"
+ 
+ >
+
+ <layer name = "hp_room1_rgf_down_books"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-510" y = "0"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/rgf/rgf_books.jpg, div_rgf_books); "
+		parent="layer[room1_rgf_down]"
+  />  
+
+  <layer name = "hp_room1_rgf_down_letter"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-290" y = "115"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/rgf/rgf_letter.jpg, div_rgf_letter); "
+		parent="layer[room1_rgf_down]"
+  />  
+
+  <layer name = "hp_room1_rgf_down_photobook"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "150" y = "150"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/rgf/rgf_photobook.jpg, div_rgf_photobook); "
+		parent="layer[room1_rgf_down]"
+  /> 
+  
+  <layer name = "hp_room1_rgf_down_prize3"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-200" y = "-10"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/rgf/rgf_prize3.jpg, div_rgf_prize3); "
+		parent="layer[room1_rgf_down]"
+  /> 
+
+  <layer name = "hp_room1_rgf_down_prize2"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "350" y = "-10"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/rgf/rgf_prize2.jpg, div_rgf_prize2); "
+		parent="layer[room1_rgf_down]"
+  /> 
+</layer>
+
+<!-- ============ АСТРОФИЗ верх ============ -->
+<layer name = "room1_vit2_up" type = "container"
+
+ parent="layer[expos]"
+ alpha="0" 
+ scale="0" 
+ width="900"
+ height="700"
+ keep = "true"
+ align="center" 
+ edge="center" 
+ scalechildren = "true"
+ 
+ >
+
+  <layer name = "hp_room1_vit2_up_machine"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-310" y = "232"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/vit2/vit2_machine.jpg, div_vit2_machine); "
+		parent="layer[room1_vit2_up]"
+  /> 
+ 
+  <layer name = "hp_room1_vit2_up_machine2"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-60" y = "240"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/vit2/vit2_machine2.jpg, div_vit2_machine2); "
+		parent="layer[room1_vit2_up]"
+  /> 
+
+  <layer name = "hp_room1_vit2_up_brick"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "60" y = "80"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/vit2/vit2_brick.jpg, div_vit2_brick); "
+		parent="layer[room1_vit2_up]"
+  /> 
+
+  <layer name = "hp_room1_vit2_up_pic2"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-240" y = "-165"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/vit2/vit2_pic2.jpg, div_vit2_pic2); "
+		parent="layer[room1_vit2_up]"
+  /> 
+
+  <layer name = "hp_room1_vit2_up_pic3"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "270" y = "250"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/vit2/vit2_pic3.jpg, div_vit2_pic3); "
+		parent="layer[room1_vit2_up]"
+  />   
+</layer>
+
+
+<!-- ============ АСТРОФИЗ низ ============ -->
+<layer name = "room1_vit2_down" type = "container"
+
+ parent="layer[expos]"
+ alpha="0" 
+ scale="0" 
+ width="900"
+ height="700"
+ keep = "true"
+ align="center" 
+ edge="center" 
+ scalechildren = "true"
+ 
+ >
+
+ <layer name = "hp_room1_vit2_down_diploma"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "265" y = "-225"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/vit2/vit2_diploma.jpg, div_vit2_diploma); "
+		parent="layer[room1_vit2_down]"
+  />  
+
+  <layer name = "hp_room1_vit2_down_medal"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "315" y = "-10"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/vit2/vit2_medal.jpg, div_vit2_medal); "
+		parent="layer[room1_vit2_down]"
+  /> 
+
+  <layer name = "hp_room1_vit2_down_telegr"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "330" y = "120"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/vit2/vit2_telegr.jpg, div_vit2_telegr); "
+		parent="layer[room1_vit2_down]"
+  />   
+
+   <layer name = "hp_room1_vit2_down_pins"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-300" y = "14"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/vit2/vit2_pins.jpg, div_vit2_pins); "
+		parent="layer[room1_vit2_down]"
+  />   
+  
+   <layer name = "hp_room1_vit2_down_pen"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-400" y = "140"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/vit2/vit2_pen.jpg, div_vit2_pen); "
+		parent="layer[room1_vit2_down]"
+  />   
+</layer>
+
+
+<!-- ============ ТЕХНОПАРК верх ============ -->
+<layer name = "room1_vit3_up" type = "container"
+
+ parent="layer[expos]"
+ alpha="0" 
+ scale="0" 
+ width="900"
+ height="700"
+ keep = "true"
+ align="center" 
+ edge="center" 
+ scalechildren = "true"
+ 
+ >
+
+  <layer name = "hp_room1_vit3_up_prize"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-270" y = "200"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/vit3/vit3_prize.jpg, div_vit3_prize); "
+		parent="layer[room1_vit2_up]"
+  /> 
+
+  <layer name = "hp_room1_vit3_up_diploma1"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-340" y = "250"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/vit3/vit3_diploma1.jpg, div_vit3_diploma1); "
+		parent="layer[room1_vit2_up]"
+  /> 
+
+  <layer name = "hp_room1_vit3_up_medals"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-30" y = "70"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/vit3/vit3_medals.jpg, div_vit3_medals); "
+		parent="layer[room1_vit2_up]"
+  /> 
+ 
+  <layer name = "hp_room1_vit3_up_plate"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-135" y = "-310"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/vit3/vit3_plate.jpg, div_vit3_plate); "
+		parent="layer[room1_vit2_up]"
+  /> 
+
+  <layer name = "hp_room1_vit3_up_diploma5"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "350" y = "330"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/vit3/vit3_diploma5.jpg, div_vit3_diploma5); "
+		parent="layer[room1_vit2_up]"
+  /> 
+  
+  <layer name = "hp_room1_vit3_up_chemic"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "240" y = "-130"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/vit3/vit3_chemic.jpg, div_vit3_chemic); "
+		parent="layer[room1_vit2_up]"
+  /> 
+  
+</layer>
+
+
+<!-- ============ ТЕХНОПАРК низ ============ -->
+<layer name = "room1_vit3_down" type = "container"
+
+ parent="layer[expos]"
+ alpha="0" 
+ scale="0" 
+ width="900"
+ height="700"
+ keep = "true"
+ align="center" 
+ edge="center" 
+ scalechildren = "true"
+ 
+ >
+
+ <layer name = "hp_room1_vit3_down_bottle"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-12" y = "-235"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/vit3/vit3_bottle.jpg, div_vit3_bottle); "
+		parent="layer[room1_vit3_down]"
+  />  
+
+ <layer name = "hp_room1_vit3_down_book"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-5" y = "110"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/vit3/vit3_book.jpg, div_vit3_book); "
+		parent="layer[room1_vit3_down]"
+  /> 
+  
+ <layer name = "hp_room1_vit3_down_diploma2"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "100" y = "100"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/vit3/vit3_diploma2.jpg, div_vit3_diploma2); "
+		parent="layer[room1_vit3_down]"
+  /> 
+ 
+ <layer name = "hp_room1_vit3_down_diploma3"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-250" y = "-335"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/vit3/vit3_diploma3.jpg, div_vit3_diploma3); "
+		parent="layer[room1_vit3_down]"
+  />  
+  
+ <layer name = "hp_room1_vit3_down_diploma4"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "255" y = "-325"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/vit3/vit3_diploma4.jpg, div_vit3_diploma4); "
+		parent="layer[room1_vit3_down]"
+  />  
+</layer>
+
+<!-- ============ ДАМХУРЦ верх ============ -->
+<layer name = "room1_vit1_up" type = "container"
+
+ parent="layer[expos]"
+ alpha="0" 
+ scale="0" 
+ width="900"
+ height="700"
+ keep = "true"
+ align="center" 
+ edge="center" 
+ scalechildren = "true"
+ 
+ >
+
+  <layer name = "hp_room1_vit1_up_disk"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "240" y = "330"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/vit1/vit1_plates.jpg, div_vit1_disk); "
+		parent="layer[room1_vit1_up]"
+  /> 
+
+  <layer name = "hp_room1_vit1_up_kartina"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "300" y = "-100"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/vit1/vit1_kartina.jpg, div_vit1_kartina); "
+		parent="layer[room1_vit1_up]"
+  />   
+</layer>
+
+
+<!-- ============ ДАМХУРЦ середина ============ -->
+<layer name = "room1_vit1_mid" type = "container"
+
+ parent="layer[expos]"
+ alpha="0" 
+ scale="0" 
+ width="900"
+ height="700"
+ keep = "true"
+ align="center" 
+ edge="center" 
+ scalechildren = "true"
+ 
+ >
+
+ <layer name = "hp_room1_vit1_mid_gazeta"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "270" y = "-50"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/vit1/vit1_gazeta.jpg, div_vit1_gazeta); "
+		parent="layer[room1_vit1_mid]"
+  />  
+
+  <layer name = "hp_room1_vit1_mid_kepka"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-260" y = "20"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/vit1/vit1_kepka.jpg, div_vit1_kepka); "
+		parent="layer[room1_vit1_mid]"
+  />  
+ 
+  <layer name = "hp_room1_vit1_mid_tkan"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "120" y = "160"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/vit1/vit1_tkan.jpg, div_vit1_tkan); "
+		parent="layer[room1_vit1_mid]"
+  /> 
+
+  <layer name = "hp_room1_vit1_mid_ychastniki"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-270" y = "200"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/vit1/vit1_ychastniki.jpg, div_vit1_ychastniki); "
+		parent="layer[room1_vit1_mid]"
+  /> 
+
+  <layer name = "hp_room1_vit1_mid_stix"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "370" y = "280"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/vit1/vit1_stix.jpg, div_vit1_stix); "
+		parent="layer[room1_vit1_mid]"
+  />  
+</layer>
+
+<!-- ============ ДАМХУРЦ низ ============ -->
+<layer name = "room1_vit1_down" type = "container"
+
+ parent="layer[expos]"
+ alpha="0" 
+ scale="0" 
+ width="900"
+ height="700"
+ keep = "true"
+ align="center" 
+ edge="center" 
+ scalechildren = "true"
+ 
+ >
+</layer>
+
+<!-- ============ ДРЕВНОСТЬ верх ============ -->
+<layer name = "room1_ancient_up" type = "container"
+
+ parent="layer[expos]"
+ alpha="0" 
+ scale="0" 
+ width="900"
+ height="700"
+ keep = "true"
+ align="center" 
+ edge="center" 
+ scalechildren = "true"
+ 
+ >
+
+  <layer name = "hp_room1_ancient_up_diplom1"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-470" y = "-200"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/ancient/ancient_diplom1.jpg, div_ancient_diplom1); "
+		parent="layer[room1_ancient_up]"
+  /> 
+
+  <layer name = "hp_room1_ancient_up_diplom2"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "450" y = "-190"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/ancient/ancient_diplom2.jpg, div_ancient_diplom2); "
+		parent="layer[room1_ancient_up]"
+  /> 
+  
+  <layer name = "hp_room1_ancient_up_medal"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "0" y = "-100"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/ancient/ancient_medal.jpg, div_ancient_medal); "
+		parent="layer[room1_ancient_up]"
+  /> 
+</layer>
+
+
+<!-- ============ ДРЕВНОСТЬ середина ============ -->
+<layer name = "room1_ancient_mid" type = "container"
+
+ parent="layer[expos]"
+ alpha="0" 
+ scale="0" 
+ width="900"
+ height="700"
+ keep = "true"
+ align="center" 
+ edge="center" 
+ scalechildren = "true"
+ 
+ >
+
+ <layer name = "hp_room1_ancient_mid_kuvshin"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-350" y = "-190"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/ancient/ancient_kuvshin.jpg, div_ancient_kuvshin); "
+		parent="layer[room1_ancient_mid]"
+  />  
+
+ <layer name = "hp_room1_ancient_mid_mechi"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "70" y = "170"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/ancient/ancient_mechi.jpg, div_ancient_mechi); "
+		parent="layer[room1_ancient_mid]"
+  />   
+
+ <layer name = "hp_room1_ancient_mid_noj"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "180" y = "60"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/ancient/ancient_noj.jpg, div_ancient_noj); "
+		parent="layer[room1_ancient_mid]"
+  />  
+
+ <layer name = "hp_room1_ancient_mid_topor"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-450" y = "310"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/ancient/ancient_topor.jpg, div_ancient_topor); "
+		parent="layer[room1_ancient_mid]"
+  />     
+</layer>
+
+<!-- ============ ДРЕВНОСТЬ низ ============ -->
+<layer name = "room1_ancient_down" type = "container"
+
+ parent="layer[expos]"
+ alpha="0" 
+ scale="0" 
+ width="900"
+ height="700"
+ keep = "true"
+ align="center" 
+ edge="center" 
+ scalechildren = "true"
+ >
+
+  <layer name = "hp_room1_ancient_mid_busi"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "150" y = "-85"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/ancient/ancient_busi.jpg, div_ancient_busi); "
+		parent="layer[room1_ancient_down]"
+  />  
+
+  <layer name = "hp_room1_ancient_mid_chainik1"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-260" y = "220"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/ancient/ancient_chainik1.jpg, div_ancient_chainik1); "
+		parent="layer[room1_ancient_down]"
+  />    
+
+  <layer name = "hp_room1_ancient_mid_chainik2"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "365" y = "260"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/ancient/ancient_chainik2.jpg, div_ancient_chainik2); "
+		parent="layer[room1_ancient_down]"
+  /> 
+
+  <layer name = "hp_room1_ancient_mid_jivopis"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "0" y = "250"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/ancient/ancient_jivopis.jpg, div_ancient_jivopis); "
+		parent="layer[room1_ancient_down]"
+  /> 
+
+  <layer name = "hp_room1_ancient_mid_figuri"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-410" y = "200"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/ancient/ancient_figuri.jpg, div_ancient_figuri); "
+		parent="layer[room1_ancient_down]"
+  />  
+
+  <layer name = "hp_room1_ancient_mid_muzika"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-280" y = "-210"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/ancient/ancient_muzika.jpg, div_ancient_muzika); "
+		parent="layer[room1_ancient_down]"
+  />  
+
+  <layer name = "hp_room1_ancient_mid_figura"
+        url="%SWFPATH%/sources/hotspot_picture.png"
+		crop="0|0|20|20" onovercrop="0|26|20|20"
+		keep="true" 
+		handcursor="false" 
+		align="center" 
+		edge="center" 
+		x = "-130" y = "-210"
+		scale="1" 
+		onclick="loadPicture(%SWFPATH%/sources/photo/room_I/ancient/ancient_figura.jpg, div_ancient_figura); "
+		parent="layer[room1_ancient_down]"
+  />    
+</layer>
+
+</krpano>

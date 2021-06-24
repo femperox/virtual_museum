@@ -1,0 +1,47 @@
+<krpano>
+
+<preview type="grid()" />
+	
+	
+<!-- arguments: 1=htmlcode, 2=padding (optional) -->
+<action name="add_html_code" type="Javascript"><![CDATA[
+	
+		var div = document.createElement("div");
+		div.id = args[3];
+		
+		krpano.trace(div.id);
+		
+		// basic styles to fit into the layer size and allow scrolling:
+		div.style.width = "100%";
+		div.style.height = "100%";
+		div.style.overflow = "auto";
+		div.style.boxSizing = "border-box";
+		div.style.padding = args[2] ? (args[2] + "px") : "0";
+		
+		
+		// allow text selection (optional):
+		div.style.webkitUserSelect =
+		div.style.MozUserSelect =
+		div.style.msUserSelect =
+		div.style.userSelect = "text";
+		
+		function stopPropagation(e){ e.stopPropagation(); }
+		function preventDefault(e){ e.preventDefault(); }
+		
+		// hacks for browsed-based mouse-wheel and touch-scrolling support:
+		div.addEventListener("wheel", stopPropagation, true);
+		div.addEventListener("mousewheel", function(event){ event.stopPropagation(); }, true);
+		div.addEventListener("DOMMouseScroll", function(event){ event.stopPropagation(); }, true);
+		div.addEventListener("touchstart", function(event){ if(krpano.device.ios && window.innerHeight == krpano.display.htmltarget.offsetHeight){ /* avoid the iOS 'overscrolling' for fullpage viewers */ var bs = document.body.parentNode.style; bs.position="fixed"; bs.top=0; bs.left=0; bs.right=0; bs.bottom=0; } krpano.control.preventTouchEvents = false; event.stopPropagation(); }, true);
+		div.addEventListener("touchend", function(event){ krpano.control.preventTouchEvents = true; event.stopPropagation(); }, true);
+		div.addEventListener("gesturestart", function(event){ event.preventDefault(); }, true);
+		
+		// add some html code:
+		div.innerHTML = args[1];
+	
+		// add the div to the layer element:
+		caller.sprite.appendChild(div);
+	
+]]></action>
+
+</krpano>
